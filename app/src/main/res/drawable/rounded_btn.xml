@@ -1,0 +1,103 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" android:state_focused="true">
+        <shape
+            android:shape="rectangle" >
+            <gradient
+
+                android:endColor="@color/colorAccent1"
+                android:gradientRadius="20"
+                android:startColor="@color/colorAccent1"
+                />
+
+            <stroke
+                android:width="2dp"
+                android:color="@color/white" />
+            <corners
+                android:radius="30dp" />
+            <size
+                android:height="100dp"
+                android:width="100dp" />
+            <stroke android:color="@color/bgColor"/>
+
+        </shape>
+    </item>
+    <item android:state_pressed="true" android:state_focused="true">
+        <shape>
+            <solid android:color="@color/colorAccent1"/>
+            <stroke
+                android:width="2.3dp"
+                android:color="@color/colorAccent1" />
+            <corners
+                android:radius="30dp" />
+            <stroke android:color="@color/bgColor"/>
+
+        </shape>
+    </item>
+
+    <item android:state_pressed="true" android:state_focused="false">
+        <shape>
+            <solid android:color="@color/colorAccent1"/>
+            <stroke
+                android:width="2.3dp"
+                android:color="@color/colorAccent1" />
+            <corners
+                android:radius="30dp" />
+        </shape>
+    </item>
+
+    <item android:state_pressed="false" android:state_focused="true">
+        <shape>
+            <solid android:color="@color/colorAccent1"/>
+            <!--<stroke-->
+                <!--android:width="2.3dp"-->
+                <!--android:color="@color/colorAccent1" />-->
+            <stroke android:color="@color/bgColor"/>
+
+            <corners
+                android:radius="30dp" />
+        </shape>
+    </item>
+
+    <item android:state_pressed="false"  android:state_focused="false">
+        <shape
+            android:shape="rectangle" >
+            <gradient
+                android:endColor="@color/colorAccent"
+                android:gradientRadius="20"
+                android:startColor="@color/colorAccent"
+                />
+
+            <stroke android:color="@color/bgColor"/>
+
+
+            <corners
+                android:radius="30dp" />
+            <size
+                android:height="100dp"
+                android:width="100dp" />
+
+        </shape>
+
+    </item>
+
+    <item android:state_enabled="true">
+        <shape
+            android:shape="rectangle" >
+            <gradient
+                android:endColor="@color/colorAccent"
+                android:gradientRadius="20"
+                android:startColor="@color/colorAccent"
+                />
+
+            <corners
+                android:radius="30dp" />
+            <size
+                android:height="100dp"
+                android:width="100dp" />
+
+        </shape>
+    </item>
+
+
+</selector>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#017a84</color>
+    <color name="colorAccent1">#05adc1</color>
+
+
+
+    <color name="bgColor">#FFEAEAEA</color>
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#1e3242</color>
+    <color name="gray">#bebebe</color>
+    <color name="black">#000000</color>
+    <color name="defaultColor">#28a8a9</color>
+    <color name="lightGreen">#91c709</color>
+    <color name="red">#e20505</color>
+
+    <color name="white">#ffffff</color>
+</resources>

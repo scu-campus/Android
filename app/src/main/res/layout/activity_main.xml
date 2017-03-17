@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.boghdady.campusapp.MainActivity">
+
+    <com.example.boghdady.campusapp.helper.CustomTextView
+        android:text="SCU CAMPUS"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.boghdady.campusapp.helper.CustomButton
+        android:background="@drawable/rounded_btn"
+        android:layout_width="match_parent"
+        android:text="@string/doctor_login"
+        android:id="@+id/btn_Doctor_Login"
+        android:textColor="#fff"
+        android:layout_marginLeft="70dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="40dp" />
+
+    <com.example.boghdady.campusapp.helper.CustomButton
+        android:background="@drawable/rounded_btn"
+        android:layout_width="match_parent"
+        android:text="@string/student_login"
+        android:id="@+id/btn_Student_Login"
+        android:textColor="#fff"
+        android:layout_marginLeft="70dp"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="70dp"
+        android:textColor="#fff"
+        android:id="@+id/login_skiptoHome"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_empty_btn"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <com.example.boghdady.campusapp.helper.CustomTextView
+            android:layout_width="match_parent"
+            android:text="@string/enter_without_login"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

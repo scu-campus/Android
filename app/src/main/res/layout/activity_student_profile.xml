@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <!--ImageView
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile"
+            android:layout_weight="1"
+            /-->
+        <!--ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_margin="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/profile"
+
+            android:layout_weight="5"
+            /-->
+        <com.mikhaellopez.circularimageview.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_margin="15dp"
+            android:layout_width="140dp"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Abd Elhameed"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_margin="3dp"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:id="@+id/textView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:src="@drawable/about_icon"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:id="@+id/imageButton" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Time Table"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_weight="0.25"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:src="@drawable/about_icon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Notification"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_weight="0.25"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:src="@drawable/ic_map_marker"
+            android:id="@+id/imageButton2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="View Map"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_weight="0.25"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_calendar_plus"
+            android:background="@null"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Create Event"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_weight="0.25"/>
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:src="@drawable/ic_bank"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Create Event"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_weight="0.25"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

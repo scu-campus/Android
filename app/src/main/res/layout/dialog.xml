@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <com.example.boghdady.campusapp.helper.CustomTextView
+        android:text="@string/choose_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/defaultColor"
+
+        android:id="@+id/dialoge_title_txt"/>
+
+    <com.example.boghdady.campusapp.helper.CustomTextView
+        android:text="@string/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="20dp"
+        android:id="@+id/dialog_cancel_txt"
+        android:layout_below="@+id/gal_layout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+     />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/gal_layout"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:id="@+id/camera_dialog_img"
+            android:src="@drawable/gallery_icon"
+
+            />
+
+        <com.example.boghdady.campusapp.helper.CustomTextView
+            android:text="@string/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/defaultColor"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/gal_txt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/dialoge_title_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:id="@+id/dialog_img"
+
+            android:src="@drawable/camera_icon"
+            />
+
+        <com.example.boghdady.campusapp.helper.CustomTextView
+            android:text="@string/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/defaultColor"
+
+            android:layout_marginLeft="8dp"
+            android:id="@+id/profile_dialog_txt"/>
+
+    </LinearLayout>
+</RelativeLayout>

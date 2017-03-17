@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">CampusApp</string>
+
+    <string name="student_name">الاسم </string>
+    <string name="faculty_name">الكلية </string>
+    <string name="choose_app">اختر التطبيق</string>
+    <string name="cancel">الغاء</string>
+    <string name="gallery">معرض الصور</string>
+    <string name="camera">الكاميرا</string>
+    <string name="perrmission">Please Enable All Perrmissions</string>
+    <string name="categories">الاقسام</string>
+    <string name="new_user">مستخدم جديد ؟ سجل الأن</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="already_user">مستخدم ؟ سجل دخولك الأن</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="check_your_internet">حدث خطأ ما !! برجاء التأكد من الاتصال بالانترنت .</string>
+    <string name="email">الإيميل</string>
+    <string name="password">كلمة السر</string>
+    <string name="forget_password">هل نسيت كلمة السر ؟</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="doctor_login">تسجيل الدخول كدكتور</string>
+    <string name="student_login">تسجيل الدخول كطالب</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="enter_without_login">دخول بدون تسجيل</string>
+    <string name="select_picture">اختر صورة</string>
+    <string name="error_loading_images">خطأ فى تحميل الصور</string>
+    <string name="please_enter_right_password">"من فضلك ادخل كلمة سر صحيحه "</string>
+    <string name="plaese_enter_right_email">من فضلك ادخل ايميل صحيح</string>
+    <string name="please_enter_right_user_name">من فضلك ادخل اسم مستخدم صحيح</string>
+    <string name="please_enter_right_email">من فضلك ادخل ايميل صحيح</string>
+    <string name="add_photo">اضافة صورة</string>
+    <string name="home_page">الصفحة الرئيسية</string>
+    <string name="please_enter_phone">من فضلك ادخل رقم التليفون</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="Department">
+        <item>عام</item>
+        <item>علوم الحاسب</item>
+        <item>نظم المعلومات</item>
+    </string-array>
+
+    <string-array name="Study_Year">
+        <item>الفرقة الاولى </item>
+        <item>الفرقة الثانية</item>
+        <item>الفرقة الثالثة</item>
+        <item>الفرقة الرابعة</item>
+    </string-array>
+
+    <string-array name="Section">
+        <item>سيكشن واحد</item>
+        <item>سيكشن اتنين</item>
+        <item>سيكشن ثلاثة</item>
+        <item>سيكشن اربعة</item>
+        <item>سيكشن خمسة</item>
+        <item>سيكشن ستة</item>
+        <item>سيكشن سبعة</item>
+        <item>سيكشن ثمانية</item>
+        <item>سيكشن تسعة</item>
+    </string-array>
+
+    <string name="events">View event</string>
+    <string name="free_halls">Free halls</string>
+    <string name="schedule">schedule</string>
+    <string name="share_app">Share APP</string>
+    <string name="search">Search</string>
+    <string name="notifications">Notifications</string>
+    <string name="title_activity_maps">Map</string>
+      <string name="style_json">
+  [
+  {
+    \"featureType\": \"poi.school\",
+    \"elementType\": \"geometry.fill\",
+    \"stylers\": [
+      {
+        \"color\": \"#b6b390\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"poi.sports_complex\",
+    \"elementType\": \"geometry.fill\",
+    \"stylers\": [
+      {
+        \"color\": \"#55a327\"
+      }
+    ]
+  }
+]
+  </string>
+
+</resources>

@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/8d7640606c3737d8f133b0328850cc3287fa6971/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="190a642ba16d1421296a4d794606279b80039c59">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e379bcf55ce66ac58d4134b2d3ff59a26b915e02/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/6a13c7c7635eb88ec0264dc0093e7544eaae0caa/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d1162dddaecc308d9fc7a83735a686cab5139823/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/d4ec36cc61e5ee163afd9c4323dc61631d68a113/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3f8f779a22cbb4c4d0759467a4f1011bb5252970">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2ac48c066a3347b51e8086e943eca71a5d69b146/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/83ad6e2904744896a5bdda9c465cc07a715db436/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec9104b53aee77dfcfd2fe1c4add23ff7c4df55f">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_393097f36fe96b773ef3b0b77aa77d9dd4b9ca49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/2391fa8aff216edd797950cdc49463bf970b0a51/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a7a04d6b7c01e569a285fa627cf64f5b05295906">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7e31300c5be92776459c6e4074d7a835647eec87/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_58ee26c38414e765120e4efdf7b03bd045df4fff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/d86c14616c1b402c7484c000ab1f6c89ad268b76/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e56f31b23ddb067f95f01255295167db7c798612">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_664864447613f18aa6571524f1b637cd8d3c0b86/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/a260ee9a81924889507d9b0c87b55ee4b19cc686/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7ea06d06a4b4f4d72dca8bdec5bf1cb2d85ad886/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/b7b1e4b6c89fed6a3acf703e48857d2298c0c33c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e9b2cfdfd59b03643f1e240668275378b96615a8">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_970b8b3ea0fe7fdb78cd643f7124d0e7b581d2bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/9b6b5ff0ab216c3ba707310a9f8924167a069d71/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="679251204de40ace98776a6f4e3a649c27e3d89f">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6bd65ed7108b5715b0b9b005afe8ab5fe3f17d91/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/6b7e03324c2d91fdeb8e5bcc9bdea50ffab4ef78/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="266570862e5792ef3c51143a8b8593cf54fac68d">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1712d8c2bb54e87c8819c69c121bbb3eabcf3024/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/b25ac1eb615f96d553f80457f0b584bb0ea815ef/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0b53c4b90654b67ee3892a8e2e7b819c083ab7a6">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d40ee40ea160c84198403acfb07a71afdf9d82eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/d636f645ccabe1fec7522c8071822a454483f1d1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="972ca945f0cf5ff0765ab94fa8e1a90661ea197a">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8baf0176d2c2edccd46e8e273d996c0c2629f895/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/85f1cc5f8ab3f0e7ae7b57c62e7e0769b7798c8b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a02e345e2cdc9a83add42aad28621c290773cb49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_1308af31bfb6d77062a5d6c17df1ae8ba365f748/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/5facb66908ee8ccf6f87d4f90eaa99e7bd326ec2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="055eed08c9cff50cac0db69c74c4d9ff7aef3d84">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_05192f95ec67bef10baafa49242ec536f690d1c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/5a86570e81e2efc562d4b257c8fe2df1a35d803f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="289cad663c288ce965463cb9ece8b35cc7de0fac">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1f35fd3521626b9299057933b237b840b7b663d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/c2fb0b281e51e3141fd58ca2e62608a0487ec285/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="85299bf1924dde0200109a58033c5ef84ecb6991">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e8d6e38f3e0360c9571802f95cd9942593f0a47e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/087dcae12fb5c596f2a9dc5576b3398763842030/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8cac69c7e3820f22d6ea4948f136a4d92ba4c12b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/f24c8a8c78b78999d89b96d3aee0b966669b63ae/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fc7f1359ca840ac1e6ff5832d75e2d597570c54d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/6931666adefc9d820a388979fc904c6c2adc9bea/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9dae58326f6f6a515022468cce56dd04ec3b9fdb">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8ab4cdea2214bd53fb4a89f9b2222164713bf9de/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/cdafecc34f11c01ee1bc09e9186f73b751d3bf36/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e07a643b288d17cb46371781f07dbfe55cb11710/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/7cc2fc0d6e7405a953eeeab2a82acf4414b815ff/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_88aea7f40d870fd2c64fd5fe2eebd0f978027bd7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/1e843252c21e3c5089d7617cb6c380ad64d3780c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c01862be0b5499375e87de2e2388326ec40e31bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.2.0_835480513dce3f6f9bf66f52506e573b540546d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/627e229c4bfda4200adad00b2d972bdea81fe298/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4438b1a7848a7c571122ba618aa1304514aabee6">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_971a3e9b95b7f58997b7e46c54f9118d196948ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.1/b9d63507329a7178e026fc334f87587ee5070ac5/gson-2.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.6.1_39a44bed1f261295f72868440805140dfd36ab34/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/31492e8064c8e0ce0a061d4a949e260e53af482d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3291679f4c364003ed64bb20797dbcd514214ffc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/2e16e53e45d91c476975c8c59fd44117a4b5bd22/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cef85cfc7df40e29fbea58844dd4c1e7d0b15542">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_62fca4661a3e41fdf3a8cda03a6b7fee4b2e40f3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/44984f2cce26f4dabc84ffa4577ba7c4536c549c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_90feb343e7dfed5dc5ae764b5ffa1a5bf28d4fd5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/baba630c70d85f427756e6892389bc8d2c2b29b3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0b8e087da59c0b062c33f49a335e59f907086da2">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b10397ceae31d31ed3044dee493230e07fea1296/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/68f7500d1dcb7809867f28f46977e7d5c1b41fea/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="363a20f1d25336e827dd24020f2ecdc42d62638f">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e24d75d348d52a47d823da78d96da8580f3c7ad6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/ee9c653b5026344fcd0449b788ba95629589efdb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f47ede9561595584dca71104baa0fecb36dda87">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ff71b9a765eebe55f58b148a25986c6a6f9964bb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/a23a01e3556509c89d19fbc3721ea7f22a1ef57a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b4671be3d1288bf4e5f527cd33e42909fbe4ecc6">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_da80733bd43dc9330b4b953e1709d6ad351ee05d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/299a98f3a4040e117934939bff6573eb9ef9dfdf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3daa7a9c9009fd386872a84c177a76979bdcafd6">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7a7076419a5a62bf49635cb3fc6b36165924bbbd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/605d3d1a095655b70f187fe8ec7bb5a91aa9731f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2d240dd085626f03f759c41d628a0c8b63e491f">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_25810b829d3399586e780889bbd4d925d8970eef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/b0f526fa46f9f684192b5407f252dc286751f97f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a30aea7df545072ad3c06f56b2efc13e67222140">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d6907e4007d0f44f2581692c0a612649160f097a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/51ca4ddbf673e5f45bd39c7dfa12c6f565ca30d8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2d3035050a075484cbf2e33f1ce1f779bae4d451">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e05879d9abbc6513590d574ed40ab40a334f76b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/c4ca9116e2e378f6359e8863ee5f29da6f4237d6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a221efdb9a77dd67ab3c69c314746ff34ccddc7b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/045859ffbec1f072c5728cca8221e1e50cc24fb1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3794bf1dc0dbe2db4a7485d50c9bfd608487e471/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/d5ded909b11eeedf868a8f9dfcc84a48fa5e1774/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d54be24759f6ef4ad76c6eb435dbd2031fbf8f7e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/bef7420a8d948f2327779ea9b40bf196884ed973/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="122ec9237acd8a57d974b9d529987f1ee6ca5aea">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b84ce0e9ea32e46c4e42e0a440765fe1dcf0e943/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/c3c60f40309ee195b16ed0e7c607894238e9e89f/output/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_869972610c373051e4e2ebf3e249ba95c4543330/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/7a20fef4d681583257bc3c9a71bfc5688663b8e3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d358528c5a8731a6e19bca910cbb3fd755ee31">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_81d071ca4575780aa63490caf67c17a1ad66de34/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/e7885f9cd253a7b60483a1d32a3966b5413ab4ff/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7fd91ec2730fdaa82906aad32a3f3d3e574bae56">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e43dea00c320b438e00bc7a2148d3f712c73f019/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/6e469f1d5b91bd4e4508438ce15c86f67e0a58e6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="15e59454416c6341bd3ed2533b585cd340682dd1">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_33bb31785efd23341cae415106bc6841ca49e140/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/2b24d5b4e2df654c7e5a25eef504ad0e33fabcf1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3804f2c35429b044ea38f5a1e6c58d392cc7354e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.2/43eeae0b9fb087bb3194ba59ab63a38a32fbf3e/retrofit-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.0.2_a0e8cc1a68ffa0e0ed77f3388498b4838fa7b2e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/2fbf83e15a9e05a0d163b8c8ff83bdcdef739177/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="20a3c4e355150c15c13dd58045d43ad0c717d916">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9208530dd6706b637384febe984d6aa771730065/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/5cecdbc2d4c18f5e40d7ddd8ab8216e5245bf8ad/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_64066a93d0089e21d9bcc480527d874b6dcc3466/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/ff7b28a39e258d667a846b80655772b9af277f78/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_707a3e1250053ec4304585ac23bb996707fbf3fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1/5e303a03d04e6788dddfa3655272580ae0fc13bb/json-simple-1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/json-simple-1.1_5f7799c39c453acb244a9de0c4f3a02178834f37/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/74cd1e5094ea4d2df93d1e47d6b4198fe5269e22/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a1ed98e01bd58976d80c062fd0ea2968a1ff68a1">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a1c44cdd11ca621eb873dacf379d131b015d9f3d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/c3c60f40309ee195b16ed0e7c607894238e9e89f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a20613db709c6c8bf12a07efe4b437d8eaf7a4db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/60b1e4d92a5ed6fd4780e8d43f1b6614db243847/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ca851be26ff89f5b32cc222cee98139fb3fac830">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0bfa5890459a63981b7ea3c60a083e4597d95e67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/2b2083bf55e0776c774484ce8ce44ee08070b236/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a2537b11ae24b42172d34e2a613fc0b903c56158">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0a9a90c376eba27e4fe50eea3ed565f9d30b534e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_d949bb2fb5d47eb06b4be81c0eca1036573d7926/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/2bb8aa74d0568c69414c4fa38b6d7e47f51b3e14/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c81df6bd515398ebe45089b0b16c55752a131f6a">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1c8841b519370d4cb540a14f64b992cfad62a3ae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/0804700abc628d107e6e79e4dc0024d15e826cf4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_67866afc35ffef24ff05cf5569ee7b9686f447e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/e683b29edd5f68feed3c03f7ae9bb17131c07c6d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a972970c8beddb69c198f61f3fc55f0606a7dfe3">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bcc5742d01e5082e564cc149aebaa92a65a65402/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/a4abaa7fd3183ab9d9da9ecbd410ec0b82bc14ad/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5304fd374e0b4ebf6b42d4037fbfb2c5336511">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_909b08ecc08b688bd27914265bd2583a95bf38af/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/d2fbb4abcda35f4efc80a10464952d2c5e7a0517/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="16afe57c1d7f8165d107c7806ce7b0c71de87159">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a966a8e7ca6018ee57834c03c63e430df0bcf98e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/05d28eb87d34a9d0df0d24e91e3e99f8cc793abd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="74ac7cbcf0de4a88e59612dc3a9e3f9e71acb4ca">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_97531d606ec9d9860516d3f956644b2aca240b09/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/9bf833403286dbddb140973bd6721d3a7f1fdf9d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="03df48d3713661d66ad024b1e406259a4c26fcac">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3c8f33cc8d3d8720e3b941d25656f9750d6f4f3f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/f4db242f098d2494e8802c2897c836543ce532e7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="910c013c511f752c4bbe24c5f492f669f4a3ccc0">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_37a7ca22a8ab9172d00ad567788989d90f5940e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/7f1072b2c1a37523d3edd365e8d6d5b964d81820/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="50e35ae101a679c4c8ef3dda075b1df9d5d947d9">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_be6c19bfe472dd9ce44e7f35f7db9a1ec8a9ce82/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/29017bcbd992f398c0cdfa2feed256b42096c1a4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a8340f8c17337c864648c13abe1416d34c80ec14">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ffc6abfc56670fbf6a3222c1fbdacf886c4efea9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.2/f8d87f15b94b8d74e7ccf61d7eedb558811cdb30/converter-gson-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.0.2_961352b79de1bbae58356febcea19c0cf27a6d70/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/0f0078d040322c0169d732b20c2068d92f15d2cb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbb3885c40e431cd2b0dc69c0cab2bf6d5da7b43">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2529a09f7ca36f99cc73a80219cefbba3051c8a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_d0f8344a0a5efe5df35c8c836fa41267d5203df5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/boghdady/.android/build-cache/7cc2fc0d6e7405a953eeeab2a82acf4414b815ff/output/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/home/boghdady/AndroidStudioProjects/Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_6944ecaae34a3d09ade2cfb1be2caf342e78f557/classes.dex" />
+    </item>
+
+</items>
