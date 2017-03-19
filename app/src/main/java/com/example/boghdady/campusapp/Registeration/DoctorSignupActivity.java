@@ -11,10 +11,8 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.LinearLayout;
@@ -22,7 +20,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.boghdady.campusapp.NavigationDrawer.NavigationDrawerActivity;
+import com.example.boghdady.campusapp.NavigationDrawer.DoctorNavigationDrawer;
+import com.example.boghdady.campusapp.NavigationDrawer.StudentNavigationDrawer;
 import com.example.boghdady.campusapp.R;
 import com.example.boghdady.campusapp.Retrofit.Interfaces;
 import com.example.boghdady.campusapp.Retrofit.Models;
@@ -32,7 +31,6 @@ import com.example.boghdady.campusapp.helper.AbstractRunTimePermission;
 import com.example.boghdady.campusapp.helper.Constants;
 import com.example.boghdady.campusapp.helper.CustomButton;
 import com.example.boghdady.campusapp.helper.CustomEditText;
-import com.example.boghdady.campusapp.helper.CustomTextView;
 import com.example.boghdady.campusapp.helper.FilePath;
 import com.example.boghdady.campusapp.helper.SharedPref;
 import com.google.gson.Gson;
@@ -73,7 +71,7 @@ public class DoctorSignupActivity extends AbstractRunTimePermission {
         skiptoHomeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DoctorSignupActivity.this, NavigationDrawerActivity.class);
+                Intent intent = new Intent(DoctorSignupActivity.this, DoctorNavigationDrawer.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 finish();
@@ -152,7 +150,7 @@ public class DoctorSignupActivity extends AbstractRunTimePermission {
 //                                    if(token != null){
 //                                        Token.sendTokenToServer(getBaseContext(), token);
 //                                    }
-                                    Intent intent=new Intent(DoctorSignupActivity.this,NavigationDrawerActivity.class);
+                                    Intent intent=new Intent(DoctorSignupActivity.this,DoctorNavigationDrawer.class);
                                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                     startActivity(intent);

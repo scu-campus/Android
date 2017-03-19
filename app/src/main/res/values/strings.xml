@@ -62,14 +62,14 @@
         <item>سيكشن تسعة</item>
     </string-array>
 
-    <string name="events">View event</string>
-    <string name="free_halls">Free halls</string>
-    <string name="schedule">schedule</string>
-    <string name="share_app">Share APP</string>
+    <string name="events">عرض الايفينتات</string>
+    <string name="free_halls">القاعات المتاحة</string>
+    <string name="schedule">الجدول الدراسى</string>
+    <string name="share_app">مشاركة التطبيق</string>
     <string name="search">Search</string>
     <string name="notifications">Notifications</string>
     <string name="title_activity_maps">Map</string>
-      <string name="style_json">
+    <string name="style_json">
   [
   {
     \"featureType\": \"poi.school\",

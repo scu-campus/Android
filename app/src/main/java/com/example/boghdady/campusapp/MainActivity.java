@@ -7,12 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import com.example.boghdady.campusapp.NavigationDrawer.NavigationDrawerActivity;
+import com.example.boghdady.campusapp.NavigationDrawer.StudentNavigationDrawer;
 import com.example.boghdady.campusapp.Registeration.DoctorSignupActivity;
 import com.example.boghdady.campusapp.Registeration.StudentSignupActivity;
-import com.example.boghdady.campusapp.helper.CustomButton;
-import com.example.boghdady.campusapp.helper.CustomEditText;
-import com.example.boghdady.campusapp.helper.CustomTextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         SkipLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this , NavigationDrawerActivity.class);
+                Intent i = new Intent(MainActivity.this , StudentNavigationDrawer.class);
                 startActivity(i);
             }
         });

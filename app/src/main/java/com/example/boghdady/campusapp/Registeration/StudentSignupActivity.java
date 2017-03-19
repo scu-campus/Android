@@ -11,7 +11,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
 import android.view.View;
@@ -24,7 +23,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.boghdady.campusapp.NavigationDrawer.NavigationDrawerActivity;
+import com.example.boghdady.campusapp.NavigationDrawer.StudentNavigationDrawer;
 import com.example.boghdady.campusapp.R;
 import com.example.boghdady.campusapp.Retrofit.Interfaces;
 import com.example.boghdady.campusapp.Retrofit.Models;
@@ -83,7 +82,7 @@ public class StudentSignupActivity extends AbstractRunTimePermission {
         skiptoHomeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(StudentSignupActivity.this, NavigationDrawerActivity.class);
+                Intent intent = new Intent(StudentSignupActivity.this, StudentNavigationDrawer.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 finish();
@@ -164,7 +163,7 @@ public class StudentSignupActivity extends AbstractRunTimePermission {
 //                                    if(token != null){
 //                                        Token.sendTokenToServer(getBaseContext(), token);
 //                                    }
-                                    Intent intent=new Intent(StudentSignupActivity.this,NavigationDrawerActivity.class);
+                                    Intent intent=new Intent(StudentSignupActivity.this,StudentNavigationDrawer.class);
                                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                     startActivity(intent);

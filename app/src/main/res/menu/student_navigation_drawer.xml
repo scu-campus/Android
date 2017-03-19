@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="الطالب">
+        <menu>
+            <item
+                android:id="@+id/study_table"
+                android:icon="?android:attr/actionModePasteDrawable"
+                android:title="@string/schedule"/>
+            <item
+                android:id="@+id/free_places"
+                android:icon="@android:drawable/presence_online"
+                android:title="@string/free_halls"/>
+        </menu>
+    </item>
+
+    <item android:title="الايفنتات">
+        <menu>
+            <item
+                android:id="@+id/creat_events"
+                android:title="اضافة ايفينت"
+                android:icon="@android:drawable/ic_menu_edit"
+                />
+            <item
+                android:id="@+id/events"
+                android:icon="@android:drawable/ic_menu_my_calendar"
+                android:title="@string/events"/>
+
+        </menu>
+
+    </item>
+
+
+    <item android:title="تواصل معنا">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="?attr/actionModeShareDrawable"
+                android:title="@string/share_app"/>
+           
+        </menu>
+    </item>
+</menu>
