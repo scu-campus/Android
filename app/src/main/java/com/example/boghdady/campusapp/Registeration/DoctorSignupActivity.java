@@ -135,11 +135,11 @@ public class DoctorSignupActivity extends AbstractRunTimePermission {
                             try {
                                 if (response.body().getUserModels()!=null){
 
-                                    SharedPref sharedPref=new SharedPref(getApplicationContext());
+                                    SharedPref sharedPref=SharedPref.getInstance(getApplicationContext());
                                     Models.UserModel userModel = response.body().getUserModels().get(0);
                                     sharedPref.putString("doctor_id",userModel.getUser_ID());
                                     sharedPref.putString("doctor_name",userModel.getUser_Name());
-                                    sharedPref.putString("doctor_image",userModel.getUser_Image());
+                                    sharedPref.setDoctorImage(userModel.getUser_Image());
                                     sharedPref.putString("doctor_email",userModel.getUser_Email());
                                     sharedPref.putString("doctor_phone",userModel.getUser_Phone());
                                     sharedPref.putString("doctor_faculty",userModel.getUser_Faculty());
@@ -216,7 +216,7 @@ public class DoctorSignupActivity extends AbstractRunTimePermission {
         ed_DoctorPassword = (CustomEditText) findViewById(R.id.ed_DoctorPassword);
         ed_FacultyName = (CustomEditText)findViewById(R.id.ed_FacultyName);
         ed_DoctorPhone = (CustomEditText) findViewById(R.id.ed_DoctorPhone);
-        sharedPref = new SharedPref(getApplicationContext());
+        sharedPref = SharedPref.getInstance(getApplicationContext());
     }
 //---------------------------------------------------------------------------------------------------------------------------------------------------
 public void getImage() {

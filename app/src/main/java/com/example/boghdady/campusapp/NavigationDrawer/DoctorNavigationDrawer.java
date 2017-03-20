@@ -10,13 +10,26 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.boghdady.campusapp.Notification_list;
 import com.example.boghdady.campusapp.R;
 import com.example.boghdady.campusapp.StudentScreen.StudentCreateEvent;
+import com.example.boghdady.campusapp.helper.Constants;
+import com.example.boghdady.campusapp.helper.CustomTextView;
+import com.example.boghdady.campusapp.helper.SharedPref;
+import com.mikhaellopez.circularimageview.CircularImageView;
 
 public class DoctorNavigationDrawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    CircularImageView profileImage;
+    CustomTextView userName;
+    SharedPref sharedPref = SharedPref.getInstance(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,19 +41,41 @@ public class DoctorNavigationDrawer extends AppCompatActivity
         setSupportActionBar(toolbar);
 
 
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.doctor_drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.doctor_nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        View view = navigationView.getHeaderView(0);
+
+        profileImage = (CircularImageView)view.findViewById(R.id.user_imageView);
+        userName = (CustomTextView)view.findViewById(R.id.txtProfileName);
+
+        SetDoctorImageAndName();
 
     }
 
+//-----------------------------------------------------------------------------------------------------------------------
+    // method to get student image and student name form shared preferance
 
+    void  SetDoctorImageAndName(){
+        String userImg=sharedPref.getDoctorImage();
+        if(!userImg.equalsIgnoreCase("") ){
+            Glide.with(DoctorNavigationDrawer.this)
+                    .load(Constants.IMAGES_URL+sharedPref.getDoctorImage())
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .centerCrop()
+                    .crossFade()
+                    .dontAnimate()
+                    .into(profileImage);
+            userName.setText(sharedPref.getString("doctor_name"));
+        }else{
+            profileImage.setImageDrawable(getResources().getDrawable(R.drawable.profile_place_holder));
+        }
+    }
 //---------------------------------------------------------------------------------------------------------------------
 
     @Override

@@ -10,13 +10,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.boghdady.campusapp.Notification_list;
 import com.example.boghdady.campusapp.R;
 import com.example.boghdady.campusapp.StudentScreen.StudentCreateEvent;
+import com.example.boghdady.campusapp.helper.Constants;
+import com.example.boghdady.campusapp.helper.CustomTextView;
+import com.example.boghdady.campusapp.helper.SharedPref;
+import com.mikhaellopez.circularimageview.CircularImageView;
 
 public class StudentNavigationDrawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+
+    CircularImageView profileImage;
+    CustomTextView userName;
+    SharedPref sharedPref = SharedPref.getInstance(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +49,34 @@ public class StudentNavigationDrawer extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        View view = navigationView.getHeaderView(0);
+
+        profileImage = (CircularImageView)view.findViewById(R.id.user_imageView);
+        userName = (CustomTextView)view.findViewById(R.id.txtProfileName);
+
+        SetStudentImageAndName();
     }
+
+
+//---------------------------------------------------------------------------------------------------------------
+    void  SetStudentImageAndName(){
+        String userImg=sharedPref.getStudentImage();
+        if(!userImg.equalsIgnoreCase("") ){
+            Glide.with(StudentNavigationDrawer.this)
+                    .load(Constants.IMAGES_URL+sharedPref.getStudentImage())
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .centerCrop()
+                    .crossFade()
+                    .dontAnimate()
+                    .into(profileImage);
+            userName.setText(sharedPref.getString("student_name"));
+        }else{
+            profileImage.setImageDrawable(getResources().getDrawable(R.drawable.profile_place_holder));
+        }
+    }
+
+//---------------------------------------------------------------------------------------------------------------------------
 
     @Override
     public void onBackPressed() {
@@ -49,6 +88,7 @@ public class StudentNavigationDrawer extends AppCompatActivity
         }
     }
 
+//---------------------------------------------------------------------------------------------------------------------------
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -71,7 +111,7 @@ public class StudentNavigationDrawer extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
-
+//---------------------------------------------------------------------------------------------------------------------------
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {

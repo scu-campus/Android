@@ -48,7 +48,7 @@ public class RetrofitClass {
 
                     if (response.body().getSuccess()==1){
                         Constants.Users=response.body().getUsers();
-                        SharedPref sharedPref=new SharedPref(activity.getApplicationContext());
+                        SharedPref sharedPref= SharedPref.getInstance(activity.getApplicationContext());
                         Models.UserModel userModel = Constants.Users.get(0);
                         sharedPref.putString("user_id",userModel.getUser_ID());
                         sharedPref.putString("user_name",userModel.getUser_Name());

@@ -145,11 +145,11 @@ public class StudentSignupActivity extends AbstractRunTimePermission {
                             try {
                                 if (response.body().getUserModels()!=null){
 
-                                    SharedPref sharedPref=new SharedPref(getApplicationContext());
+                                    SharedPref sharedPref=SharedPref.getInstance(getApplicationContext());
                                     Models.UserModel userModel = response.body().getUserModels().get(0);
                                     sharedPref.putString("student_id",userModel.getUser_ID());
                                     sharedPref.putString("student_name",userModel.getUser_Name());
-                                    sharedPref.putString("student_image",userModel.getUser_Image());
+                                    sharedPref.setStudentImage(userModel.getUser_Image());
                                     sharedPref.putString("student_email",userModel.getUser_Email());
                                     sharedPref.putString("student_phone",userModel.getUser_Phone());
                                     sharedPref.putString("student_faculty",userModel.getUser_Faculty());
@@ -376,7 +376,7 @@ public void onPermissionGranted(int requestCode) {
         ed_studentPassword = (CustomEditText) findViewById(R.id.ed_studentPassword);
         ed_FacultyName = (CustomEditText)findViewById(R.id.ed_FacultyName);
         ed_studentPhone = (CustomEditText) findViewById(R.id.ed_studentPhone);
-        sharedPref = new SharedPref(getApplicationContext());
+        sharedPref =  SharedPref.getInstance(getApplicationContext());
 
     }
 }
