@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">CampusApp</string>
 
-    <string name="student_name">الاسم </string>
-    <string name="faculty_name">الكلية </string>
+    <string name="student_name">الاسم</string>
+    <string name="faculty_name">الكلية</string>
     <string name="choose_app">اختر التطبيق</string>
     <string name="cancel">الغاء</string>
     <string name="gallery">معرض الصور</string>
@@ -44,7 +44,7 @@
     </string-array>
 
     <string-array name="Study_Year">
-        <item>الفرقة الاولى </item>
+        <item>الفرقة الاولى</item>
         <item>الفرقة الثانية</item>
         <item>الفرقة الثالثة</item>
         <item>الفرقة الرابعة</item>
@@ -70,26 +70,26 @@
     <string name="notifications">Notifications</string>
     <string name="title_activity_maps">Map</string>
     <string name="style_json">
-  [
-  {
-    \"featureType\": \"poi.school\",
-    \"elementType\": \"geometry.fill\",
-    \"stylers\": [
-      {
+        [
+        {
+        \"featureType\": \"poi.school\",
+        \"elementType\": \"geometry.fill\",
+        \"stylers\": [
+        {
         \"color\": \"#b6b390\"
-      }
-    ]
-  },
-  {
-    \"featureType\": \"poi.sports_complex\",
-    \"elementType\": \"geometry.fill\",
-    \"stylers\": [
-      {
+        }
+        ]
+        },
+        {
+        \"featureType\": \"poi.sports_complex\",
+        \"elementType\": \"geometry.fill\",
+        \"stylers\": [
+        {
         \"color\": \"#55a327\"
-      }
-    ]
-  }
-]
-  </string>
+        }
+        ]
+        }
+        ]
+    </string>
 
 </resources>
