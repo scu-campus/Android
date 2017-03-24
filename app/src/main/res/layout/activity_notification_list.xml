@@ -4,11 +4,11 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:orientation="vertical"
-              android:background="#26a69a">
+              android:background="@color/colorAccent">
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/background_toolbar_translucent"
+        android:background="@color/colorAccent"
         >
 
         <android.support.v7.widget.Toolbar
@@ -21,11 +21,11 @@
 
     <ListView
         android:id="@+id/list"
-        android:layout_margin="5dp"
+        android:layout_margin="3dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:divider="#26a69a"
-        android:dividerHeight="5dp"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="3dp"
         android:listSelector="@drawable/list_selector" />
 
 </LinearLayout>

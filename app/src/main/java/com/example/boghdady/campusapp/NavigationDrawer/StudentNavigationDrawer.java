@@ -14,9 +14,11 @@ import android.view.View;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.example.boghdady.campusapp.Create_post;
 import com.example.boghdady.campusapp.Notification_list;
 import com.example.boghdady.campusapp.R;
 import com.example.boghdady.campusapp.StudentScreen.StudentCreateEvent;
+import com.example.boghdady.campusapp.Tabedactivity;
 import com.example.boghdady.campusapp.helper.Constants;
 import com.example.boghdady.campusapp.helper.CustomTextView;
 import com.example.boghdady.campusapp.helper.SharedPref;
@@ -120,6 +122,8 @@ public class StudentNavigationDrawer extends AppCompatActivity
 
 
         if(id == R.id.study_table) {
+            Intent in =new Intent(StudentNavigationDrawer.this, Tabedactivity.class);
+            startActivity(in);
 
         } else if(id == R.id.free_places) {
 
