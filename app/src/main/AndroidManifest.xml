@@ -29,7 +29,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -56,7 +55,6 @@
             android:label="@string/title_activity_maps"/>
         <activity android:name=".NavigationDrawer.DoctorNavigationDrawer"/>
         <activity android:name=".Create_post">
-
         </activity>
     </application>
 

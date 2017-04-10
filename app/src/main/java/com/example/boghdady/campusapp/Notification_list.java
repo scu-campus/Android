@@ -72,7 +72,7 @@ public class Notification_list extends AppCompatActivity {
             // TODO Auto-generated method stub
             View vi = convertView;
             if(vi == null)
-                vi = inflater.inflate(R.layout.list_row, null);
+                vi = inflater.inflate(R.layout.notification_list_row, null);
             TextView text = (TextView) vi.findViewById(R.id.snippet);
             text.setText(data[position]);
             return vi;

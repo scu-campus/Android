@@ -9,7 +9,7 @@
     tools:showIn="@layout/app_bar_navigation_drawer">
 
     <include
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
         layout="@layout/activity_maps"/>
 </android.support.constraint.ConstraintLayout>
