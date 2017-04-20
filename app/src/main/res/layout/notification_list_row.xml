@@ -51,7 +51,7 @@
         android:layout_marginRight="5dip"
         android:gravity="right"
         android:text="5:45"
-        android:textColor="#10bcc9"
+        android:textColor="@color/colorAccent"
         android:textSize="10dip"
         android:textStyle="bold"/>
 
