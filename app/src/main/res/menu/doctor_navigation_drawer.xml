@@ -24,7 +24,7 @@
             <item
                 android:id="@+id/events"
                 android:icon="@android:drawable/ic_menu_my_calendar"
-                android:title="@string/events"/>
+                android:title="@string/view_events"/>
 
         </menu>
 

@@ -1,27 +1,27 @@
 <resources>
     <string name="app_name">CampusApp</string>
 
-    <string name="student_name">الاسم</string>
-    <string name="faculty_name">الكلية</string>
-    <string name="choose_app">اختر التطبيق</string>
-    <string name="cancel">الغاء</string>
-    <string name="gallery">معرض الصور</string>
-    <string name="camera">الكاميرا</string>
+    <string name="student_name">Name</string>
+    <string name="faculty_name">Faculty</string>
+    <string name="choose_app">Choose app</string>
+    <string name="cancel">cancel</string>
+    <string name="gallery">gallery</string>
+    <string name="camera">camera</string>
     <string name="perrmission">Please Enable All Perrmissions</string>
-    <string name="categories">الاقسام</string>
-    <string name="new_user">مستخدم جديد ؟ سجل الأن</string>
-    <string name="phone_number">رقم الهاتف</string>
-    <string name="create_account">إنشاء حساب</string>
-    <string name="already_user">مستخدم ؟ سجل دخولك الأن</string>
+    <string name="categories">categories</string>
+    <string name="new_user">New user? sign up now</string>
+    <string name="phone_number">phone number</string>
+    <string name="create_account">create_account</string>
+    <string name="already_user">already_user? sign in now</string>
     <string name="please_wait">Please wait...</string>
     <string name="check_your_internet">حدث خطأ ما !! برجاء التأكد من الاتصال بالانترنت .</string>
-    <string name="email">الإيميل</string>
-    <string name="password">كلمة السر</string>
-    <string name="forget_password">هل نسيت كلمة السر ؟</string>
-    <string name="login">تسجيل الدخول</string>
-    <string name="doctor_login">تسجيل الدخول كدكتور</string>
-    <string name="student_login">تسجيل الدخول كطالب</string>
-    <string name="logout">تسجيل الخروج</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="forget_password">forget password?</string>
+    <string name="login">login</string>
+    <string name="doctor_login">sign up as a doctor</string>
+    <string name="student_login">sign up as a student</string>
+    <string name="logout">log out</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="enter_without_login">دخول بدون تسجيل</string>
@@ -62,10 +62,10 @@
         <item>سيكشن تسعة</item>
     </string-array>
 
-    <string name="view_events">عرض المناسبات</string>
-    <string name="free_halls">القاعات المتاحة</string>
-    <string name="schedule">الجدول الدراسى</string>
-    <string name="share_app">مشاركة التطبيق</string>
+    <string name="view_events">View events</string>
+    <string name="free_halls">Free halls</string>
+    <string name="schedule">schedule</string>
+    <string name="share_app">Share app</string>
     <string name="search">Search</string>
     <string name="notifications">Notifications</string>
     <string name="title_activity_maps">Map</string>
@@ -93,18 +93,18 @@
     </string>
     <string name="title_activity_tabed_activity">Tabed_activity</string>
     <string name="section_format">Hello World from section: %1$d</string>
-    <string name="create_event">اضافة مناسبة</string>
-    <string name="event_name">اسم المناسبة</string>
-    <string name="event_link">رابط المناسبة</string>
-    <string name="date">التاريخ</string>
-    <string name="time">التوقيت</string>
-    <string name="event_details">تفاصيل المناسبة</string>
-    <string name="event_location">مكان المناسبة</string>
-    <string name="done">تم</string>
-    <string name="student">الطالب</string>
-    <string name="events">المناسبات</string>
-    <string name="contact_us"> تواصل معنا</string>
-    <string name="user_name">اسم المستخدم</string>
+    <string name="create_event">Create event</string>
+    <string name="event_name">Event name</string>
+    <string name="event_link">Event link</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="event_details">Event details</string>
+    <string name="event_location">Event location</string>
+    <string name="done">Done</string>
+    <string name="student">Student</string>
+    <string name="events">Events</string>
+    <string name="contact_us">Contact us</string>
+    <string name="user_name">User name</string>
     <string name="test_post">*IBM course will start tomorrow morning 9 am in the first stage 1.I
         hope that everyone will attend the meeting and bring their own laptop and deal with its
         problems today so as not to delay the follow-up tomorrow. The wifi card is specifically

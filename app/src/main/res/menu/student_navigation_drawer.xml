@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="الطالب">
+    <item android:title="@string/student">
         <menu>
             <item
                 android:id="@+id/study_table"
@@ -14,28 +14,28 @@
         </menu>
     </item>
 
-    <item android:title="الايفنتات">
+    <item android:title="@string/events">
         <menu>
             <item
                 android:id="@+id/creat_events"
-                android:title="اضافة ايفينت"
+                android:title="@string/create_event"
                 android:icon="@android:drawable/ic_menu_edit"
                 />
             <item
                 android:id="@+id/events"
                 android:icon="@android:drawable/ic_menu_my_calendar"
-                android:title="@string/events"/>
+                android:title="@string/view_events"/>
 
         </menu>
 
     </item>
 
 
-    <item android:title="تواصل معنا">
+    <item android:title="@string/contact_us">
         <menu>
             <item
                 android:id="@+id/share"
-                android:icon="?attr/actionModeShareDrawable"
+                android:icon="@drawable/ic_menu_share"
                 android:title="@string/share_app"/>
            
         </menu>

@@ -22,7 +22,7 @@
             android:layout_marginBottom="50dp"
             android:layout_marginTop="100dp"
             android:gravity="center"
-            android:text="اضافة ايفينت"
+            android:text="@string/create_event"
             android:textColor="@color/colorAccent"
             android:textSize="35dp"
             android:textStyle="bold"/>
@@ -35,7 +35,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/login_container"
+            android:background="@drawable/text_shape"
             android:orientation="horizontal"
             android:paddingRight="5dp"
             android:weightSum="2">
@@ -45,18 +45,17 @@
                 android:id="@+id/ed_EventName"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
 
                 android:gravity="center_vertical"
-                android:hint="@string/student_name"
+                android:hint="@string/event_name"
                 android:paddingLeft="15dp"
                 android:paddingRight="10dp"
 
                 android:textColor="@color/black"
                 android:textColorHint="#99a0ab"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 tools:ignore="RtlCompat"
             />
 
@@ -71,7 +70,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/login_container"
+            android:background="@drawable/text_shape"
             android:orientation="horizontal"
             android:paddingRight="5dp"
             android:weightSum="2">
@@ -81,26 +80,19 @@
                 android:id="@+id/ed_EventLink"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
 
                 android:gravity="center_vertical"
-                android:hint="لينك الايفينت"
+                android:hint="@string/event_link"
                 android:paddingLeft="15dp"
                 android:paddingRight="10dp"
 
                 android:textColor="@color/black"
                 android:textColorHint="#99a0ab"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 tools:ignore="RtlCompat"
             />
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:src="@drawable/user"/>
 
         </LinearLayout>
 
@@ -116,16 +108,15 @@
             <com.example.boghdady.campusapp.helper.CustomEditText
                 android:id="@+id/ed_EventDate"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_custom_shape"
-                android:drawableLeft="@drawable/calendar"
+                android:background="@drawable/text_shape"
+                android:drawableRight="@drawable/calendar"
                 android:editable="false"
-                android:gravity="right|center"
-                android:hint="تاريخ الايفينت"
+                android:gravity="left|center"
+                android:hint="@string/date"
                 android:onClick="pick_date"
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
@@ -133,23 +124,21 @@
                 android:paddingTop="15dp"
                 android:singleLine="true"
                 android:textColor="#556080"
-                android:textColorHint="#cfcfcf"
+                android:textColorHint="#99a0ab"
                 android:textDirection="rtl"
-                android:textSize="15dp"
-            />
+                android:textSize="18sp"
+                android:layout_height="45dp"/>
             <com.example.boghdady.campusapp.helper.CustomEditText
                 android:id="@+id/ed_EvetTime"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_custom_shape"
-                android:drawableLeft="@drawable/alarm"
+                android:background="@drawable/text_shape"
                 android:editable="false"
-                android:gravity="right|center"
-                android:hint=" ميعاد الايفنت"
+                android:gravity="left|center"
+                android:hint="@string/time"
                 android:onClick="pick_time"
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
@@ -157,10 +146,10 @@
                 android:paddingTop="15dp"
                 android:singleLine="true"
                 android:textColor="#556080"
-                android:textColorHint="#cfcfcf"
+                android:textColorHint="#99a0ab"
                 android:textDirection="rtl"
-                android:textSize="15dp"
-            />
+                android:textSize="18sp"
+                android:drawableRight="@drawable/alarm" android:layout_height="45dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -169,7 +158,7 @@
             android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
             android:layout_weight=".5"
-            android:background="@drawable/login_container"
+            android:background="@drawable/text_shape"
             android:orientation="horizontal"
             android:paddingRight="5dp">
 
@@ -182,7 +171,7 @@
                 android:layout_marginLeft="20dp"
                 android:background="@android:color/transparent"
                 android:gravity="center"
-                android:hint="تفاصيل الايفينت"
+                android:hint="@string/event_details"
                 android:inputType="textMultiLine"
                 android:lines="8"
                 android:maxLines="10"
@@ -193,7 +182,7 @@
 
                 android:textColor="@color/black"
                 android:textColorHint="#99a0ab"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 tools:ignore="RtlCompat"
             />
 
@@ -207,20 +196,21 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/login_container"
+            android:background="@drawable/text_shape"
             android:orientation="vertical"
             android:paddingRight="15dp"
             android:textColor="#fff">
             <com.example.boghdady.campusapp.helper.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:drawableLeft="@drawable/marker"
+                android:drawableRight="@drawable/marker"
                 android:gravity="center_vertical|start"
-                android:hint="اختر مكان الايفينت"
+                android:hint="@string/event_location"
                 android:textColor="@color/black"
-                android:textColorHint="#cfcfcf"
-                android:textSize="15sp"
-                android:textStyle="bold"/>
+                android:textColorHint="#99a0ab"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
 
         </LinearLayout>
         <LinearLayout
@@ -235,13 +225,16 @@
             android:paddingRight="15dp"
             android:textColor="#fff">
             <com.example.boghdady.campusapp.helper.CustomButton
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:background="@drawable/button_select"
+                android:background="@drawable/button_shape"
+                android:textAllCaps="false"
                 android:gravity="center"
-                android:text="إضافة الايفنت"
-                android:textColor="@color/white" android:textSize="15sp"/>
+                android:textColorHint="#99a0ab"
+                android:text="@string/done"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

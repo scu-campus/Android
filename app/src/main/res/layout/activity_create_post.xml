@@ -75,7 +75,11 @@
         android:hint="Write your post..."
         android:textColor="@color/black"
         android:padding="5dp"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:layoutDirection="rtl" android:scrollbars="horizontal|vertical"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollHorizontally="true"
+    />
     <Button
         android:id="@+id/sendPost_button"
         android:layout_width="wrap_content"
