@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_toolbar_translucent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_toolbar_translucent"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        <FrameLayout
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/back"
+                android:layout_width="20dp"
+                android:layout_height="50dp" />
+        </FrameLayout>
+
+        <com.example.boghdady.campusapp.helper.CustomTextView
+            android:layout_width="wrap_content"
+            android:text="@string/add_event"
+            android:textColor="#ffffff"
+            android:id="@+id/offer_title"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
 <ScrollView
     android:background="@color/white"
     android:layout_height="match_parent"
@@ -8,6 +44,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.boghdady.campusapp.StudentScreen.StudentCreateEvent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
 
     <LinearLayout
         android:id="@+id/activity_login"
@@ -206,3 +244,4 @@
 
     </LinearLayout>
 </ScrollView>
+</android.support.design.widget.AppBarLayout>

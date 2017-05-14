@@ -59,7 +59,9 @@ public class StudentNavigationDrawer extends AppCompatActivity
     }
 
 
-//---------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+// method to get student image and student name form shared preferance
+
     void  SetStudentImageAndName(){
         String userImg=sharedPref.getStudentImage();
         if(!userImg.equalsIgnoreCase("") ){

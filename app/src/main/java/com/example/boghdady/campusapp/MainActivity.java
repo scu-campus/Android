@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
    Button btnDocLoging , btnStudentLogin ;
    LinearLayout SkipLogin;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         SkipLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this , StudentNavigationDrawer.class);
+                Intent i = new Intent(MainActivity.this , MapsActivity.class);
                 startActivity(i);
             }
         });

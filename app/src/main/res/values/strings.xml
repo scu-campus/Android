@@ -34,6 +34,7 @@
     <string name="add_photo">اضافة صورة</string>
     <string name="home_page">الصفحة الرئيسية</string>
     <string name="please_enter_phone">من فضلك ادخل رقم التليفون</string>
+    <string name="add_event">اضافة ايفينت</string>
     <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
 
     <string name="action_settings">Settings</string>

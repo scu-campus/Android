@@ -59,7 +59,7 @@ public class DoctorNavigationDrawer extends AppCompatActivity
     }
 
 //-----------------------------------------------------------------------------------------------------------------------
-    // method to get student image and student name form shared preferance
+    // method to get doctor image and doctor name form shared preferance
 
     void  SetDoctorImageAndName(){
         String userImg=sharedPref.getDoctorImage();
