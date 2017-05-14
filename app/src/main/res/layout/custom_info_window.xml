@@ -1,17 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_height="300dp"
+              android:layout_gravity="center"
               android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-    <TextView
-        android:text="TextView"
+              android:foreground="@drawable/text_shape" android:layout_width="250dp"
+>
+
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/title"/>
+        android:layout_height="100dp"
+        android:cropToPadding="false"
+        android:isScrollContainer="false" android:longClickable="false"
+        android:saveEnabled="false" android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fac_fci"/>
+
 
     <TextView
-        android:text="TextView"
+        android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/snippet"/>
+        android:background="@color/colorAccent"
+        android:text="Faculty of computer and informatics"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:singleLine="true" android:textIsSelectable="false" android:maxLines="1"
+        android:ellipsize="none" android:freezesText="false" android:layout_height="20dp"
+        android:layout_margin="1dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+        <TextView
+            android:id="@+id/snippet"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:text="The faculty of computers and informatics functions in three interrelated directions. In the educational direction it produces highly qualified graduates who easily get good jobs shortly after receiving their certificates. In the research direction articles that get Acceptance in renounced conferences and journals, both local and international, are produced by its faculty members and their assistants. Finally, in the community service direction, training courses, both ready-made and tailor-made, plus free and paid consultations are supplied to requesting parties in the university and its surroundings. The main concern of the faculty for the time beings is to increase the number of its faculty members. In this respect the faculty is actively seeking to hire qualified individuals and is at the same time pursuing a vigorous missions program to produce faculty members from its teaching assistant. "
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" android:padding="5dp" android:ellipsize="end"
+            android:maxLines="10" android:layout_height="180dp"/>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="more..."
+            android:textSize="12sp" android:padding="5dp"
+            android:gravity="center" android:layout_gravity="center"
+            android:textColor="@color/colorAccent" android:layout_height="25dp"/>
+    </LinearLayout>
 </LinearLayout>

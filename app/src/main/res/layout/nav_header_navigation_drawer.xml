@@ -27,6 +27,6 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:text="اسم المستخدم" />
+        android:text="@string/user_name" />
 
 </LinearLayout>

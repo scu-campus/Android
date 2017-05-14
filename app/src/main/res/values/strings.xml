@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">CampusApp</string>
 
-    <string name="student_name">الاسم </string>
-    <string name="faculty_name">الكلية </string>
+    <string name="student_name">الاسم</string>
+    <string name="faculty_name">الكلية</string>
     <string name="choose_app">اختر التطبيق</string>
     <string name="cancel">الغاء</string>
     <string name="gallery">معرض الصور</string>
@@ -45,7 +45,7 @@
     </string-array>
 
     <string-array name="Study_Year">
-        <item>الفرقة الاولى </item>
+        <item>الفرقة الاولى</item>
         <item>الفرقة الثانية</item>
         <item>الفرقة الثالثة</item>
         <item>الفرقة الرابعة</item>
@@ -63,7 +63,7 @@
         <item>سيكشن تسعة</item>
     </string-array>
 
-    <string name="events">عرض الايفينتات</string>
+    <string name="view_events">عرض المناسبات</string>
     <string name="free_halls">القاعات المتاحة</string>
     <string name="schedule">الجدول الدراسى</string>
     <string name="share_app">مشاركة التطبيق</string>
@@ -71,26 +71,53 @@
     <string name="notifications">Notifications</string>
     <string name="title_activity_maps">Map</string>
     <string name="style_json">
-  [
-  {
-    \"featureType\": \"poi.school\",
-    \"elementType\": \"geometry.fill\",
-    \"stylers\": [
-      {
+        [
+        {
+        \"featureType\": \"poi.school\",
+        \"elementType\": \"geometry.fill\",
+        \"stylers\": [
+        {
         \"color\": \"#b6b390\"
-      }
-    ]
-  },
-  {
-    \"featureType\": \"poi.sports_complex\",
-    \"elementType\": \"geometry.fill\",
-    \"stylers\": [
-      {
+        }
+        ]
+        },
+        {
+        \"featureType\": \"poi.sports_complex\",
+        \"elementType\": \"geometry.fill\",
+        \"stylers\": [
+        {
         \"color\": \"#55a327\"
-      }
-    ]
-  }
-]
-  </string>
+        }
+        ]
+        }
+        ]
+    </string>
+    <string name="title_activity_tabed_activity">Tabed_activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="create_event">اضافة مناسبة</string>
+    <string name="event_name">اسم المناسبة</string>
+    <string name="event_link">رابط المناسبة</string>
+    <string name="date">التاريخ</string>
+    <string name="time">التوقيت</string>
+    <string name="event_details">تفاصيل المناسبة</string>
+    <string name="event_location">مكان المناسبة</string>
+    <string name="done">تم</string>
+    <string name="student">الطالب</string>
+    <string name="events">المناسبات</string>
+    <string name="contact_us"> تواصل معنا</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="test_post">*IBM course will start tomorrow morning 9 am in the first stage 1.I
+        hope that everyone will attend the meeting and bring their own laptop and deal with its
+        problems today so as not to delay the follow-up tomorrow. The wifi card is specifically
+        defined.
+        * The exam at the end of the course is not the only factor in passing the course
+        and all participants must attend all days. * Who wants to apologize for attendance please
+        tell me today until it is replaced, without causing the loss of the cycle on him and his
+        colleagues and may cause himself a problem in the future.
+        * Regarding the role and names
+        accepted is found in the following link:
+        Http://sallamah.weebly.com/ibm-cloud-course-spring-2017.html this role is happy, and good
+        luck to all
+    </string>
 
 </resources>

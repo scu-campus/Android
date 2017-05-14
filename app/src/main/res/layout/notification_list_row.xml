@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/list_selector"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/list_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:padding="3dp"
+        android:paddingStart="0dp"
+        android:paddingLeft="0dp"
+        android:layout_margin="3dp"
+        android:src="@drawable/notify_icon"/>
+
+    <TextView
+        android:id="@+id/snippet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_image"
+        android:layout_toRightOf="@+id/list_image"
+        android:text="Ahmed Sallam"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:typeface="sans"/>
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/snippet"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/list_image"
+        android:text="Assignment 1 is available now Assignment 1 is available now Assignment 1 is available now ..."
+        android:textColor="#636161"
+        android:textSize="15dp"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/snippet"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:text="5:45"
+        android:textColor="@color/colorAccent"
+        android:textSize="10dip"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

@@ -12,6 +12,6 @@
         android:id="@+id/notification_settings"
         android:orderInCategory="100"
         android:title="@string/notifications"
-        android:icon="@drawable/notify"
+        android:icon="@drawable/notification_ic"
         app:showAsAction="ifRoom"/>
 </menu>

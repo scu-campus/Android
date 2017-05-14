@@ -17,13 +17,15 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.boghdady.campusapp.Notification_list;
 import com.example.boghdady.campusapp.R;
 import com.example.boghdady.campusapp.StudentScreen.StudentCreateEvent;
+import com.example.boghdady.campusapp.Tabedactivity;
 import com.example.boghdady.campusapp.helper.Constants;
 import com.example.boghdady.campusapp.helper.CustomTextView;
 import com.example.boghdady.campusapp.helper.SharedPref;
 import com.mikhaellopez.circularimageview.CircularImageView;
 
 public class StudentNavigationDrawer extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener
+{
 
 
     CircularImageView profileImage;
@@ -31,14 +33,14 @@ public class StudentNavigationDrawer extends AppCompatActivity
     SharedPref sharedPref = SharedPref.getInstance(this);
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.student_navigation_drawer);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("SCU Campus ");
         setSupportActionBar(toolbar);
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.student_drawer_layout);
@@ -52,28 +54,39 @@ public class StudentNavigationDrawer extends AppCompatActivity
 
         View view = navigationView.getHeaderView(0);
 
-        profileImage = (CircularImageView)view.findViewById(R.id.user_imageView);
-        userName = (CustomTextView)view.findViewById(R.id.txtProfileName);
+        profileImage = (CircularImageView) view.findViewById(R.id.user_imageView);
+        userName = (CustomTextView) view.findViewById(R.id.txtProfileName);
 
         SetStudentImageAndName();
     }
 
 
+<<<<<<< HEAD
 //-----------------------------------------------------------------------------------------------------------------------
 // method to get student image and student name form shared preferance
 
     void  SetStudentImageAndName(){
         String userImg=sharedPref.getStudentImage();
         if(!userImg.equalsIgnoreCase("") ){
+=======
+    //---------------------------------------------------------------------------------------------------------------
+    void SetStudentImageAndName()
+    {
+        String userImg = sharedPref.getStudentImage();
+        if(!userImg.equalsIgnoreCase(""))
+        {
+>>>>>>> 4b3494d8e7c36b0fdb32c7b7a694625c92335618
             Glide.with(StudentNavigationDrawer.this)
-                    .load(Constants.IMAGES_URL+sharedPref.getStudentImage())
+                    .load(Constants.IMAGES_URL + sharedPref.getStudentImage())
                     .diskCacheStrategy(DiskCacheStrategy.ALL)
                     .centerCrop()
                     .crossFade()
                     .dontAnimate()
                     .into(profileImage);
             userName.setText(sharedPref.getString("student_name"));
-        }else{
+        }
+        else
+        {
             profileImage.setImageDrawable(getResources().getDrawable(R.drawable.profile_place_holder));
         }
     }
@@ -81,55 +94,73 @@ public class StudentNavigationDrawer extends AppCompatActivity
 //---------------------------------------------------------------------------------------------------------------------------
 
     @Override
-    public void onBackPressed() {
+    public void onBackPressed()
+    {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.student_drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
+        if(drawer.isDrawerOpen(GravityCompat.START))
+        {
             drawer.closeDrawer(GravityCompat.START);
-        } else {
+        }
+        else
+        {
             super.onBackPressed();
         }
     }
 
-//---------------------------------------------------------------------------------------------------------------------------
+    //---------------------------------------------------------------------------------------------------------------------------
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.navigation_drawer, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        if(id == R.id.notification_settings) {
-            Intent intent=new Intent(this,Notification_list.class);
+        if(id == R.id.notification_settings)
+        {
+            Intent intent = new Intent(this, Notification_list.class);
             startActivity(intent);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
-//---------------------------------------------------------------------------------------------------------------------------
+
+    //---------------------------------------------------------------------------------------------------------------------------
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(MenuItem item)
+    {
         // Handlالقيمةe navigation view item clicks here.
         int id = item.getItemId();
 
 
-        if(id == R.id.study_table) {
+        if(id == R.id.study_table)
+        {
+            Intent in = new Intent(StudentNavigationDrawer.this, Tabedactivity.class);
+            startActivity(in);
 
-        } else if(id == R.id.free_places) {
+        }
+        else if(id == R.id.free_places)
+        {
 
-        } else if(id == R.id.creat_events) {
-            Intent i = new Intent(StudentNavigationDrawer.this , StudentCreateEvent.class);
+        }
+        else if(id == R.id.creat_events)
+        {
+            Intent i = new Intent(StudentNavigationDrawer.this, StudentCreateEvent.class);
             startActivity(i);
 
-        } else if(id == R.id.share) {
+        }
+        else if(id == R.id.share)
+        {
 
         }
 
