@@ -98,4 +98,43 @@ public class Models {
             Checking = checking;
         }
     }
+
+
+    public static class LocationModel{
+        int Location_ID;
+        String Faculty_Name;
+        Double Latitude , Longitude;
+
+        public void setLocation_ID(int location_ID) {
+            Location_ID = location_ID;
+        }
+
+        public void setFaculty_Name(String faculty_Name) {
+            Faculty_Name = faculty_Name;
+        }
+
+        public void setLatitude(Double latitude) {
+            Latitude = latitude;
+        }
+
+        public void setLongitude(Double longitude) {
+            Longitude = longitude;
+        }
+
+        public int getLocation_ID() {
+            return Location_ID;
+        }
+
+        public String getFaculty_Name() {
+            return Faculty_Name;
+        }
+
+        public Double getLatitude() {
+            return Latitude;
+        }
+
+        public Double getLongitude() {
+            return Longitude;
+        }
+    }
 }

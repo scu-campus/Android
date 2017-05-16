@@ -37,6 +37,15 @@
     <string name="add_event">اضافة ايفينت</string>
     <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
 
+    <string name="please_enter_right_event_name">من فضلك ادخل اسم الايفينت</string>
+    <string name="please_enter_right_event_details">من فضلك ادخل تفاصيل الايفينت</string>
+    <string name="please_enter_right_event_time">من فضلك ادخل وقت الايفينت</string>
+    <string name="please_enter_right_event_date">من فضلك ادخل تاريخ الايفينت</string>
+    <string name="please_enter_right_event_location">من فضلك ادخل موقع الايفينت</string>
+    <string name="event_added_successfully">تم إضافة الايفينت بنجاح</string>
+    <string name="wrong">حدث خطأ ! الرجاء المحاولة مرة اخرى</string>
+
+
     <string name="action_settings">Settings</string>
     <string-array name="Department">
         <item>عام</item>
@@ -61,6 +70,32 @@
         <item>سيكشن سبعة</item>
         <item>سيكشن ثمانية</item>
         <item>سيكشن تسعة</item>
+    </string-array>
+
+    <string-array name="countries_array">
+        <item>كلية الحاسبات والمعلومات</item>
+        <item>كلية الهندسة</item>
+        <item>معهد كونفوشيوس</item>
+        <item>مركز تنميه المهارات المهنيه و التوظيفيه</item>
+        <item>البوابه الرئيسيه</item>
+        <item>كلية الطب البيطرى</item>
+        <item>بوابه اسنان</item>
+        <item>كلية الزراعة</item>
+        <item>مدرج عثمان</item>
+        <item>المسجد</item>
+        <item>مبنى ادارة الجامعة</item>
+        <item>كلية الصيدلة</item>
+        <item>كلية طب الاسنان</item>
+        <item>كلية التربية</item>
+        <item>كلية الطب البشرى</item>
+        <item>مسرح الرعايه</item>
+        <item>كلية التجارة</item>
+        <item>مسرح الجامعه</item>
+        <item>بوابه عثمان</item>
+        <item>مجمع لملاعب</item>
+        <item>المدينه الجامعيه للطلاب</item>
+        <item>ملعب المدينه الجامعيه لكره القدم</item>
+        <item>مستشفى الجامعه</item>
     </string-array>
 
     <string name="view_events">عرض المناسبات</string>
@@ -119,5 +154,6 @@
         Http://sallamah.weebly.com/ibm-cloud-course-spring-2017.html this role is happy, and good
         luck to all
     </string>
+    <string name="title_activity_search_maps">Map</string>
 
 </resources>

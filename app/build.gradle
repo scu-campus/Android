@@ -27,6 +27,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.mikhaellopez:circularimageview:3.0.2'
+    compile 'me.grantland:autofittextview:0.2.+'
     compile 'com.mikhaellopez:circularimageview:3.0.2'
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.googlecode.json-simple:json-simple:1.1'
@@ -36,6 +37,7 @@ dependencies {
     compile 'com.android.support:design:23.4.0'
     compile 'me.grantland:autofittextview:0.2.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.google.android.gms:play-services:9.8.0'
+    compile 'com.google.android.gms:play-services:10.2.4'
+    compile 'com.google.android.gms:play-services-maps:10.2.4'
     testCompile 'junit:junit:4.12'
 }

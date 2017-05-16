@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.boghdady.campusapp.StudentScreen.StudentCreateEvent">
 
 <android.support.design.widget.AppBarLayout
     android:layout_width="match_parent"
@@ -35,6 +42,7 @@
             android:layout_height="wrap_content" />
 
     </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>
 
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -166,6 +174,7 @@
                 android:textDirection="rtl"
                 android:textSize="18sp"
                 android:layout_height="45dp"/>
+            
             <com.example.boghdady.campusapp.helper.CustomEditText
                 android:id="@+id/ed_EvetTime"
                 android:layout_width="match_parent"
@@ -276,4 +285,4 @@
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
-</android.support.design.widget.AppBarLayout>
+    </LinearLayout>

@@ -82,4 +82,31 @@ public class Responses {
             this.success = success;
         }
     }
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+
+
+    public static class LocationPlacesResponse{
+
+        ArrayList<Models.LocationModel> Location ;
+        int success ;
+
+        public ArrayList<Models.LocationModel> getLocation() {
+            return Location;
+        }
+
+        public void setLocation(ArrayList<Models.LocationModel> location) {
+            Location = location;
+        }
+
+        public int getSuccess() {
+            return success;
+        }
+
+
+        public void setSuccess(int success) {
+            this.success = success;
+        }
+    }
 }
