@@ -89,14 +89,14 @@ public class Responses {
 
     public static class LocationPlacesResponse{
 
-        ArrayList<Models.LocationModel> Location ;
+        List<Models.LocationModel> Location ;
         int success ;
 
-        public ArrayList<Models.LocationModel> getLocation() {
+        public List<Models.LocationModel> getLocation() {
             return Location;
         }
 
-        public void setLocation(ArrayList<Models.LocationModel> location) {
+        public void setLocation(List<Models.LocationModel> location) {
             Location = location;
         }
 

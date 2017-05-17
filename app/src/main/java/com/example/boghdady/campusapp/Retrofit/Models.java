@@ -105,6 +105,13 @@ public class Models {
         String Faculty_Name;
         Double Latitude , Longitude;
 
+        public LocationModel(){}
+        public LocationModel(int id, String fa){
+            Location_ID = id;
+            Faculty_Name = fa;
+
+        }
+
         public void setLocation_ID(int location_ID) {
             Location_ID = location_ID;
         }

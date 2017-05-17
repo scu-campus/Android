@@ -2,25 +2,33 @@ package com.example.boghdady.campusapp.Map;
 
 import android.Manifest;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.support.annotation.IntegerRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.annotation.StringDef;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.boghdady.campusapp.MapsActivity;
 import com.example.boghdady.campusapp.NavigationDrawer.DoctorNavigationDrawer;
 import com.example.boghdady.campusapp.R;
 import com.example.boghdady.campusapp.Registeration.DoctorSignupActivity;
@@ -60,6 +68,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -79,6 +88,10 @@ public class SearchMapsActivity extends FragmentActivity implements OnMapReadyCa
     private LatLng searchedPlace;
     ProgressDialog pDialog;
     ArrayList<LatLng> MarkerPoints;
+    private Map<String, LatLng> places;
+    private AutoCompleteTextView textView;
+    private LatLng originPlace;
+    private String destinationName;
 
 
     private static boolean foundLocation;
@@ -95,9 +108,25 @@ public class SearchMapsActivity extends FragmentActivity implements OnMapReadyCa
 
 
 
-        GetLatLongAndFacultyNameFromRetrofit(4);
+        textView = (AutoCompleteTextView) findViewById(R.id.autocomplete_country);
+        textView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                TextView t = (TextView) view;
+                if (originPlace != null) {
+
+                    destinationName = t.getText().toString();
+                   searchedPlace = getIdFromPlaces(t.getText());
+                    drawRoute(originPlace, searchedPlace, destinationName);
+                }
+                //Toast.makeText(SearchMapsActivity.this, getIdFromPlaces(t.getText()) + "", Toast.LENGTH_SHORT).show();
+            }
+        });
+        GetLocationPlaceDetailsRetrofit();
 
     }
+
+
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
@@ -129,7 +158,7 @@ public class SearchMapsActivity extends FragmentActivity implements OnMapReadyCa
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        addMarker(30.62116, 32.2684);
+        //addMarker(30.62116, 32.2684);
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
@@ -141,19 +170,55 @@ public class SearchMapsActivity extends FragmentActivity implements OnMapReadyCa
 
     }
 
+//-----------------------------------------------------------------------------------------------------------------------------------------------
 
-    private void addMarker(double lat, double lng) {
+    @Override
+    public void onLocationChanged(Location location) {
+        mLastLocation = location;
 
-        if (mMap != null) {
-            LatLng pos = new LatLng(lat, lng);
-            searchedPlace = new LatLng(lat, lng);
-            mMap.addMarker(new MarkerOptions().position(pos).title("Marker in Sydney"));
-            CameraPosition cameraPosition = CameraPosition.fromLatLngZoom(searchedPlace, 15);
-            CameraUpdate cameraUpdate = CameraUpdateFactory.newCameraPosition(cameraPosition);
-            mMap.moveCamera(cameraUpdate);
+
+        //remove previous current location Marker
+        if (marker != null) {
+            marker.remove();
         }
+
+        double dLatitude = mLastLocation.getLatitude();
+        double dLongitude = mLastLocation.getLongitude();
+        marker = mMap.addMarker(new MarkerOptions().position(new LatLng(dLatitude, dLongitude))
+                .title("My Location").icon(BitmapDescriptorFactory
+                        .defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+        originPlace = new LatLng(dLatitude, dLongitude);
+        if (searchedPlace != null) {
+
+
+            drawRoute(originPlace, searchedPlace, destinationName);
+        }
+        if (!foundLocation) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(dLatitude, dLongitude), 14));
+            foundLocation = true;
+        }
+
+
     }
 
+
+
+    private void drawRoute(LatLng origin, LatLng dest , String destName) {
+        mMap.clear();
+        mMap.addMarker(new MarkerOptions().position(origin).title("My Location"));
+        mMap.addMarker(new MarkerOptions().position(dest).title(destName));
+        // Getting URL to the Google Directions API
+        String url = getUrl(origin, dest);
+        Log.d("onMapClick", url.toString());
+        FetchUrl FetchUrl = new FetchUrl();
+
+        // Start downloading json data from Google Directions API
+        FetchUrl.execute(url);
+    }
+
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     @Override
     protected void onResume() {
         super.onResume();
@@ -206,51 +271,9 @@ public class SearchMapsActivity extends FragmentActivity implements OnMapReadyCa
         }
     }
 
-    @Override
-    public void onLocationChanged(Location location) {
-        mLastLocation = location;
-
-        //remove previous current location Marker
-        if (marker != null) {
-            marker.remove();
-        }
-
-        double dLatitude = mLastLocation.getLatitude();
-        double dLongitude = mLastLocation.getLongitude();
-        marker = mMap.addMarker(new MarkerOptions().position(new LatLng(dLatitude, dLongitude))
-                .title("My Location").icon(BitmapDescriptorFactory
-                        .defaultMarker(BitmapDescriptorFactory.HUE_RED)));
-        if (searchedPlace != null) {
-
-            drawRoute(new LatLng(dLatitude, dLongitude), searchedPlace);
-        }
-        if (!foundLocation) {
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(dLatitude, dLongitude), 8));
-            foundLocation = true;
-        }
-    }
 
 
-
-
-    private void drawRoute(LatLng origin, LatLng dest) {
-        mMap.clear();
-        mMap.addMarker(new MarkerOptions().position(origin).title("Marker in Sydney"));
-        mMap.addMarker(new MarkerOptions().position(dest).title("Marker in Sydney"));
-        // Getting URL to the Google Directions API
-        String url = getUrl(origin, dest);
-        Log.d("onMapClick", url.toString());
-        FetchUrl FetchUrl = new FetchUrl();
-
-        // Start downloading json data from Google Directions API
-        FetchUrl.execute(url);
-    }
-
-
-
-
-
-
+//------------------------------------------------------------------------------------------------------------------------------
 
     private String getUrl(LatLng origin, LatLng dest) {
 
@@ -423,7 +446,7 @@ public class SearchMapsActivity extends FragmentActivity implements OnMapReadyCa
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 
-    void GetLatLongAndFacultyNameFromRetrofit(int ID){
+    void GetLocationPlaceDetailsRetrofit(){
 
                     pDialog = new ProgressDialog(SearchMapsActivity.this);
                     pDialog.setMessage(getString(R.string.please_wait));
@@ -439,7 +462,7 @@ public class SearchMapsActivity extends FragmentActivity implements OnMapReadyCa
                             .build();
 
                     Interfaces.GetPlacesLocation getPlaceLocation=retrofit.create(Interfaces.GetPlacesLocation.class);
-                    Call<Responses.LocationPlacesResponse> call=getPlaceLocation.getPlacesLoaction(new SentBody.InsertLocationID(ID));
+                    Call<Responses.LocationPlacesResponse> call=getPlaceLocation.getPlacesLoaction();
                     call.enqueue(new Callback<Responses.LocationPlacesResponse>() {
                         @Override
                         public void onResponse(Call<Responses.LocationPlacesResponse> call, Response<Responses.LocationPlacesResponse> response) {
@@ -447,13 +470,18 @@ public class SearchMapsActivity extends FragmentActivity implements OnMapReadyCa
                             try {
                                 if (response.body().getSuccess()==1){
 
-                                    ArrayList<Models.LocationModel> placeLocation = response.body().getLocation();
 
-                                    String FacultyName = placeLocation.get(0).getFaculty_Name();
-                                    double lat = placeLocation.get(0).getLatitude();
-                                    double lang= placeLocation.get(0).getLongitude();
+                                    List<Models.LocationModel> placeLocation = response.body().getLocation();
 
-                                    Toast.makeText(SearchMapsActivity.this,FacultyName +"  "+ lat+"  "+ lang , Toast.LENGTH_SHORT).show();
+                                    places = new HashMap<String, LatLng>();
+                                    String[] autoCompleteList = new String[placeLocation.size()];
+
+                                    for (int i = 0; i < placeLocation.size(); i++){
+                                        places.put(placeLocation.get(i).getFaculty_Name(), new LatLng(placeLocation.get(i).getLatitude(), placeLocation.get(i).getLongitude()));
+                                        autoCompleteList[i] = placeLocation.get(i).getFaculty_Name();
+                                    }
+                                    initAutoComplete(autoCompleteList);
+
 
                                 }
                                 if (response.body().getSuccess()==0){
@@ -481,12 +509,20 @@ public class SearchMapsActivity extends FragmentActivity implements OnMapReadyCa
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    void AutoCompleteText(ArrayList<String> placeLocation){
+    void initAutoComplete(String[] places){
 
-        AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.autocomplete_country);
     //    String[] countries = getResources().getStringArray(R.array.countries_array);
-        ArrayAdapter<String> adapter =
-                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, placeLocation);
+
+        ArrayAdapter adapter =
+                new ArrayAdapter(this, android.R.layout.simple_list_item_1, places);
+
         textView.setAdapter(adapter);
+    }
+
+
+    // method to get Lat and lon from using faculty name
+    private LatLng getIdFromPlaces(CharSequence text) {
+
+        return places.get(text.toString());
     }
 }

@@ -2,6 +2,7 @@ package com.example.boghdady.campusapp.Retrofit;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 /**
@@ -25,7 +26,7 @@ public class Interfaces {
     }
 
     public interface GetPlacesLocation{
-        @POST("Campus/Get_Place_Location.php")
-        Call<Responses.LocationPlacesResponse> getPlacesLoaction(@Body SentBody.InsertLocationID insertLocationID);
+        @GET("Campus/Get_All_Locations.php")
+        Call<Responses.LocationPlacesResponse> getPlacesLoaction();
     }
 }
