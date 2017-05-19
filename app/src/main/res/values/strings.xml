@@ -134,6 +134,8 @@
     <string name="event_link">رابط المناسبة</string>
     <string name="date">التاريخ</string>
     <string name="time">التوقيت</string>
+    <string name="from">من</string>
+    <string name="to">الي</string>
     <string name="event_details">تفاصيل المناسبة</string>
     <string name="event_location">مكان المناسبة</string>
     <string name="done">تم</string>
