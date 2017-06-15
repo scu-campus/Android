@@ -1,32 +1,22 @@
 package com.example.boghdady.campusapp.StudentScreen;
 
-import android.Manifest;
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
-import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-
-import android.view.View;
-import android.widget.FrameLayout;
-
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.FrameLayout;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-
-import com.example.boghdady.campusapp.NavigationDrawer.DoctorNavigationDrawer;
 import com.example.boghdady.campusapp.R;
-import com.example.boghdady.campusapp.Registeration.DoctorSignupActivity;
 import com.example.boghdady.campusapp.Retrofit.Interfaces;
-import com.example.boghdady.campusapp.Retrofit.Models;
 import com.example.boghdady.campusapp.Retrofit.Responses;
 import com.example.boghdady.campusapp.Retrofit.SentBody;
 import com.example.boghdady.campusapp.helper.Constants;
-import com.example.boghdady.campusapp.helper.SharedPref;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -48,14 +38,11 @@ public class StudentCreateEvent extends AppCompatActivity implements DatePickerD
         super.onCreate(savedInstanceState);
         setContentView(R.layout.student_creat_event);
 
-        // handling back arrow
-        backBtn = (FrameLayout) findViewById(R.id.backBtn);
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("Create Event");
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         InsertEvent("Eevnt one","فان داى هالا بالا", "214" , "244424" , "2/2/2939", "3432 AM", "http://index-soft.com/Campus/Insert_Event.php");

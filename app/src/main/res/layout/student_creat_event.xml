@@ -7,42 +7,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.boghdady.campusapp.StudentScreen.StudentCreateEvent">
 
-<android.support.design.widget.AppBarLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/background_toolbar_translucent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/background_toolbar_translucent"
-        app:popupTheme="@style/AppTheme.PopupOverlay" >
-
-        <FrameLayout
-            android:id="@+id/backBtn"
-            android:layout_width="50dp"
-            android:layout_height="50dp">
-            <ImageView
-                android:layout_gravity="center"
-                android:src="@drawable/back"
-                android:layout_width="20dp"
-                android:layout_height="50dp" />
-        </FrameLayout>
-
-        <com.example.boghdady.campusapp.helper.CustomTextView
-            android:layout_width="wrap_content"
-            android:text="@string/add_event"
-            android:textColor="#ffffff"
-            android:id="@+id/offer_title"
-            android:layout_gravity="center"
-            android:textSize="17sp"
-            android:layout_height="wrap_content" />
-
-    </android.support.v7.widget.Toolbar>
-</android.support.design.widget.AppBarLayout>
 
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -52,21 +16,21 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:background="@color/white"
-    tools:context="com.example.boghdady.campusapp.StudentScreen.StudentCreateEvent">
+    tools:context="com.example.boghdady.campusapp.StudentScreen.StudentCreateEvent"
+    tools:ignore="UselessParent">
 
 
 
     <LinearLayout
         android:id="@+id/activity_login"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:weightSum="1">
 
 
         <LinearLayout
             android:id="@+id/signup_Event"
-            android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
@@ -74,12 +38,12 @@
             android:orientation="horizontal"
             android:background="@drawable/text_shape"
             android:paddingRight="5dp"
-            android:weightSum="2">
+            android:weightSum="2" android:paddingLeft="5dp" android:layout_width="match_parent">
 
 
             <com.example.boghdady.campusapp.helper.CustomEditText
                 android:id="@+id/ed_EventName"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
@@ -92,7 +56,7 @@
                 android:textColor="@color/black"
                 android:textColorHint="#99a0ab"
                 android:textSize="18sp"
-                tools:ignore="RtlCompat"
+                tools:ignore="RtlCompat,RtlHardcoded"
             />
 
         </LinearLayout>
@@ -109,7 +73,7 @@
             android:background="@drawable/text_shape"
             android:orientation="horizontal"
             android:paddingRight="5dp"
-            android:weightSum="2">
+            android:weightSum="2" android:paddingLeft="5dp">
 
 
 
@@ -117,7 +81,7 @@
 
             <com.example.boghdady.campusapp.helper.CustomEditText
                 android:id="@+id/ed_EventLink"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
@@ -125,7 +89,7 @@
                 android:gravity="center_vertical"
                 android:hint="@string/event_link"
                 android:paddingLeft="15dp"
-                android:paddingRight="10dp"
+                android:paddingRight="15dp"
 
                 android:textColor="@color/black"
                 android:textColorHint="#99a0ab"
@@ -140,7 +104,6 @@
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:gravity="center_horizontal"
-        android:layoutDirection="rtl"
         android:orientation="horizontal">
 
         <com.example.boghdady.campusapp.helper.CustomTextView
@@ -150,7 +113,7 @@
             android:layout_marginRight="15dp"
             android:layout_marginTop="0dp"
             android:layout_weight="1"
-            android:gravity="right|center"
+            android:gravity="center|start"
             android:text="@string/time"
             android:textColor="#556080"
             android:textSize="20sp"
@@ -162,7 +125,7 @@
             android:layout_marginRight="15dp"
             android:layout_marginTop="0dp"
             android:layout_weight="1"
-            android:gravity="right|center"
+            android:gravity="center|start"
             android:text="@string/date"
             android:textColor="#556080"
             android:textSize="20sp"
@@ -176,7 +139,7 @@
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:gravity="center_horizontal"
-            android:layoutDirection="rtl"
+
             android:orientation="horizontal">
 
 
@@ -189,19 +152,16 @@
                 android:layout_marginTop="0dp"
                 android:layout_weight="1"
                 android:background="@drawable/text_shape"
-                android:drawableLeft="@drawable/start_time"
-                android:editable="false"
-                android:gravity="right|center"
+                android:drawableEnd="@drawable/start_time"
+                android:gravity="center|start"
                 android:hint="@string/from"
                 android:onClick="pick_time"
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="15dp"
-                android:singleLine="true"
                 android:textColor="#556080"
                 android:textColorHint="#99a0ab"
-                android:textDirection="rtl"
                 android:textSize="18sp" />
 
             <com.example.boghdady.campusapp.helper.CustomEditText
@@ -211,20 +171,17 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="0dp"
                 android:layout_weight="1"
+                android:gravity="center|start"
                 android:background="@drawable/text_shape"
-                android:drawableLeft="@drawable/calendar"
-                android:editable="false"
-                android:gravity="right|center"
+                android:drawableEnd="@drawable/calendar"
                 android:hint="@string/from"
                 android:onClick="pick_date"
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="15dp"
-                android:singleLine="true"
                 android:textColor="#556080"
                 android:textColorHint="#99a0ab"
-                android:textDirection="rtl"
                 android:textSize="18sp"
                 android:layout_height="45dp"/>
 
@@ -235,7 +192,7 @@
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:gravity="center_horizontal"
-            android:layoutDirection="rtl"
+
             android:orientation="horizontal">
 
 
@@ -247,20 +204,19 @@
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/text_shape"
-                android:editable="false"
-                android:gravity="right|center"
+                android:gravity="center|start"
                 android:hint="@string/to"
                 android:onClick="pick_time"
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="15dp"
-                android:singleLine="true"
+
                 android:textColor="#556080"
                 android:textColorHint="#99a0ab"
-                android:textDirection="rtl"
+
                 android:textSize="18sp"
-                android:drawableLeft="@drawable/endtime" android:layout_height="45dp"/>
+                android:drawableEnd="@drawable/endtime" android:layout_height="45dp"/>
 
             <com.example.boghdady.campusapp.helper.CustomEditText
                 android:id="@+id/end_EventDate"
@@ -270,19 +226,17 @@
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/text_shape"
-                android:drawableLeft="@drawable/calendar"
-                android:editable="false"
-                android:gravity="right|center"
+                android:drawableEnd="@drawable/calendar"
+                android:gravity="center|start"
                 android:hint="@string/to"
                 android:onClick="pick_date"
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="15dp"
-                android:singleLine="true"
                 android:textColor="#556080"
                 android:textColorHint="#99a0ab"
-                android:textDirection="rtl"
+
                 android:textSize="18sp"
                 android:layout_height="45dp"/>
 
@@ -297,7 +251,7 @@
             android:layout_weight=".5"
             android:background="@drawable/text_shape"
             android:orientation="horizontal"
-            android:paddingRight="5dp">
+            android:paddingRight="5dp" android:paddingLeft="5dp">
 
 
             <com.example.boghdady.campusapp.helper.CustomEditText
@@ -305,7 +259,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:background="@android:color/transparent"
                 android:gravity="center"
                 android:hint="@string/event_details"
@@ -313,8 +268,8 @@
                 android:lines="8"
                 android:maxLines="10"
                 android:minLines="6"
-                android:paddingLeft="15dp"
-                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 android:scrollbars="vertical"
 
                 android:textColor="@color/black"
@@ -336,13 +291,13 @@
             android:orientation="vertical"
             android:background="@drawable/text_shape"
             android:paddingRight="15dp"
-            android:textColor="#fff">
+            android:textColor="#fff" android:paddingLeft="15dp">
 
 
             <com.example.boghdady.campusapp.helper.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:drawableRight="@drawable/ic_location_on_black_24dp"
+                android:drawableEnd="@drawable/ic_location_on_black_24dp"
                 android:gravity="center_vertical|start"
                 android:hint="@string/event_location"
                 android:textColor="@color/black"
@@ -363,6 +318,7 @@
             android:layout_marginTop="10dp"
             android:orientation="vertical"
             android:paddingRight="15dp"
+            android:paddingLeft="15dp"
             android:textColor="#fff">
             <com.example.boghdady.campusapp.helper.CustomButton
                 android:layout_width="100dp"

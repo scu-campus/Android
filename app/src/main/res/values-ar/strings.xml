@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">CampusApp</string>
+
+    <string name="student_name">الاسم</string>
+    <string name="faculty_name">الكلية</string>
+    <string name="choose_app">اختر التطبيق</string>
+    <string name="cancel">الغاء</string>
+    <string name="gallery">معرض الصور</string>
+    <string name="camera">الكاميرا</string>
+    <string name="perrmission">Please Enable All Perrmissions</string>
+    <string name="categories">الاقسام</string>
+    <string name="new_user">مستخدم جديد ؟ سجل الأن</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="already_user">مستخدم ؟ سجل دخولك الأن</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="check_your_internet">حدث خطأ ما !! برجاء التأكد من الاتصال بالانترنت .</string>
+    <string name="email">الإيميل</string>
+    <string name="password">كلمة السر</string>
+    <string name="forget_password">هل نسيت كلمة السر ؟</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="doctor_login">تسجيل الدخول كدكتور</string>
+    <string name="student_login">تسجيل الدخول كطالب</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="enter_without_login">دخول بدون تسجيل</string>
+    <string name="select_picture">اختر صورة</string>
+    <string name="error_loading_images">خطأ فى تحميل الصور</string>
+    <string name="please_enter_right_password">"من فضلك ادخل كلمة سر صحيحه "</string>
+    <string name="plaese_enter_right_email">من فضلك ادخل ايميل صحيح</string>
+    <string name="please_enter_right_user_name">من فضلك ادخل اسم مستخدم صحيح</string>
+    <string name="please_enter_right_email">من فضلك ادخل ايميل صحيح</string>
+    <string name="add_photo">اضافة صورة</string>
+    <string name="home_page">الصفحة الرئيسية</string>
+    <string name="please_enter_phone">من فضلك ادخل رقم التليفون</string>
+    <string name="add_event">اضافة ايفينت</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+
+    <string name="please_enter_right_event_name">من فضلك ادخل اسم الايفينت</string>
+    <string name="please_enter_right_event_details">من فضلك ادخل تفاصيل الايفينت</string>
+    <string name="please_enter_right_event_time">من فضلك ادخل وقت الايفينت</string>
+    <string name="please_enter_right_event_date">من فضلك ادخل تاريخ الايفينت</string>
+    <string name="please_enter_right_event_location">من فضلك ادخل موقع الايفينت</string>
+    <string name="event_added_successfully">تم إضافة الايفينت بنجاح</string>
+    <string name="wrong">حدث خطأ ! الرجاء المحاولة مرة اخرى</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string-array name="Department">
+        <item>عام</item>
+        <item>علوم الحاسب</item>
+        <item>نظم المعلومات</item>
+    </string-array>
+
+    <string-array name="Study_Year">
+        <item>الفرقة الاولى</item>
+        <item>الفرقة الثانية</item>
+        <item>الفرقة الثالثة</item>
+        <item>الفرقة الرابعة</item>
+    </string-array>
+
+    <string-array name="Section">
+        <item>سيكشن واحد</item>
+        <item>سيكشن اتنين</item>
+        <item>سيكشن ثلاثة</item>
+        <item>سيكشن اربعة</item>
+        <item>سيكشن خمسة</item>
+        <item>سيكشن ستة</item>
+        <item>سيكشن سبعة</item>
+        <item>سيكشن ثمانية</item>
+        <item>سيكشن تسعة</item>
+    </string-array>
+
+    <string-array name="countries_array">
+        <item>كلية الحاسبات والمعلومات</item>
+        <item>كلية الهندسة</item>
+        <item>معهد كونفوشيوس</item>
+        <item>مركز تنميه المهارات المهنيه و التوظيفيه</item>
+        <item>البوابه الرئيسيه</item>
+        <item>كلية الطب البيطرى</item>
+        <item>بوابه اسنان</item>
+        <item>كلية الزراعة</item>
+        <item>مدرج عثمان</item>
+        <item>المسجد</item>
+        <item>مبنى ادارة الجامعة</item>
+        <item>كلية الصيدلة</item>
+        <item>كلية طب الاسنان</item>
+        <item>كلية التربية</item>
+        <item>كلية الطب البشرى</item>
+        <item>مسرح الرعايه</item>
+        <item>كلية التجارة</item>
+        <item>مسرح الجامعه</item>
+        <item>بوابه عثمان</item>
+        <item>مجمع لملاعب</item>
+        <item>المدينه الجامعيه للطلاب</item>
+        <item>ملعب المدينه الجامعيه لكره القدم</item>
+        <item>مستشفى الجامعه</item>
+    </string-array>
+
+    <string name="view_events">عرض المناسبات</string>
+    <string name="free_halls">القاعات المتاحة</string>
+    <string name="schedule">الجدول الدراسى</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="search">Search</string>
+    <string name="notifications">Notifications</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="style_json">
+        [
+        {
+        \"featureType\": \"poi.school\",
+        \"elementType\": \"geometry.fill\",
+        \"stylers\": [
+        {
+        \"color\": \"#b6b390\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"poi.sports_complex\",
+        \"elementType\": \"geometry.fill\",
+        \"stylers\": [
+        {
+        \"color\": \"#55a327\"
+        }
+        ]
+        }
+        ]
+    </string>
+    <string name="title_activity_tabed_activity">Tabed_activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="create_event">اضافة مناسبة</string>
+    <string name="event_name">اسم المناسبة</string>
+    <string name="event_link">رابط المناسبة</string>
+    <string name="date">التاريخ</string>
+    <string name="time">التوقيت</string>
+    <string name="from">من</string>
+    <string name="to">الي</string>
+    <string name="event_details">تفاصيل المناسبة</string>
+    <string name="event_location">مكان المناسبة</string>
+    <string name="done">تم</string>
+    <string name="student">الطالب</string>
+    <string name="events">المناسبات</string>
+    <string name="contact_us"> تواصل معنا</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="test_post">*IBM course will start tomorrow morning 9 am in the first stage 1.I
+        hope that everyone will attend the meeting and bring their own laptop and deal with its
+        problems today so as not to delay the follow-up tomorrow. The wifi card is specifically
+        defined.
+        * The exam at the end of the course is not the only factor in passing the course
+        and all participants must attend all days. * Who wants to apologize for attendance please
+        tell me today until it is replaced, without causing the loss of the cycle on him and his
+        colleagues and may cause himself a problem in the future.
+        * Regarding the role and names
+        accepted is found in the following link:
+        Http://sallamah.weebly.com/ibm-cloud-course-spring-2017.html this role is happy, and good
+        luck to all
+    </string>
+    <string name="title_activity_search_maps">Map</string>
+
+</resources>
