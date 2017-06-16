@@ -157,5 +157,11 @@
         luck to all
     </string>
     <string name="title_activity_search_maps">Map</string>
+    <string name="Write_post">اكتب منشورك..</string>
+    <string name="attachment">إضافة مرفق</string>
+    <string name="post_to">إرسال المنشور إلى:</string>
+    <string name="year">الفرقة</string>
+    <string name="section">المجموعة</string>
+    <string name="send">إرسال</string>
 
 </resources>

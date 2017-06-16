@@ -121,5 +121,11 @@
     </string>
     <string name="from">From</string>
     <string name="to">To</string>
+    <string name="Write_post">Write your post..</string>
+    <string name="attachment">Add attachment</string>
+    <string name="post_to">Send post to:</string>
+    <string name="year">Year</string>
+    <string name="section">Section</string>
+    <string name="send">Send</string>
 
 </resources>

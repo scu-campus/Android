@@ -11,12 +11,11 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.boghdady.campusapp.Create_post">
-
-    <TextView
+    <com.example.boghdady.campusapp.helper.CustomTextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send post to:"
+        android:text="@string/post_to"
         android:textColor="@color/colorAccent"
         android:textSize="26sp"
     />
@@ -24,17 +23,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:padding="5dp"
         android:background="@drawable/text_shape"
-        android:orientation="horizontal">
-        <TextView
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <com.example.boghdady.campusapp.helper.CustomTextView
             android:id="@+id/year_textView"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:text="Year:"
+            android:gravity="center_vertical"
+            android:text="@string/year"
             android:textColor="@color/black"
-            android:textSize="18sp"
-            android:gravity="center_vertical"/>
+            android:textSize="18sp"/>
         <Spinner
             android:id="@+id/year_spinner"
             android:layout_width="match_parent"
@@ -46,24 +45,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:padding="5dp"
         android:background="@drawable/text_shape"
-        android:orientation="horizontal">
-        <TextView
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <com.example.boghdady.campusapp.helper.CustomTextView
             android:id="@+id/section_textView"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:text="Section:"
-            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:text="@string/section"
             android:textColor="@color/black"
-            android:gravity="center_vertical"/>
+            android:textSize="18sp"/>
         <Spinner
             android:id="@+id/section_spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
         />
     </LinearLayout>
-    <EditText
+    <com.example.boghdady.campusapp.helper.CustomEditText
         android:id="@+id/post_editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,23 +71,32 @@
         android:background="@drawable/text_shape"
         android:ems="10"
         android:gravity="start"
-        android:hint="Write your post..."
-        android:textColor="@color/black"
+        android:hint="@string/Write_post"
         android:padding="5dp"
-        android:textSize="20sp"
-        android:layoutDirection="rtl" android:scrollbars="horizontal|vertical"
-        android:scrollbarStyle="outsideOverlay"
         android:scrollHorizontally="true"
+        android:scrollbarStyle="outsideOverlay" android:scrollbars="horizontal|vertical"
+        android:textColor="@color/black"
+        android:textSize="20sp"
     />
-    <Button
+    <com.example.boghdady.campusapp.helper.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_shape"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:drawableEnd="@drawable/attach_icon"
+        android:padding="5dp"
+        android:hint="@string/attachment"/>
+    <com.example.boghdady.campusapp.helper.CustomButton
         android:id="@+id/sendPost_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
         android:background="@drawable/button_shape"
-        android:text="Send"
-    android:textSize="16dp"/>
+        android:text="@string/send"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"/>
 </LinearLayout>
