@@ -2,7 +2,7 @@
     <string name="app_name">CampusApp</string>
 
     <string name="student_name">الاسم</string>
-    <string name="faculty_name">الكلية</string>
+    <string name="faculty_name">إسم الكلية</string>
     <string name="choose_app">اختر التطبيق</string>
     <string name="cancel">الغاء</string>
     <string name="gallery">معرض الصور</string>
@@ -154,6 +154,9 @@
     <string name="open_attachment">فتح المرفق</string>
     <string name="docot_photo">صورة الدكتور</string>
     <string name="post_content">محتوى المنشور</string>
+    <string name="faculty_photo">صورة الكلية</string>
+    <string name="more">المزيد</string>
+    <string name="faculty_info">معلومات الكلية</string>
 
 
 </resources>

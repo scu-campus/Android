@@ -3,7 +3,7 @@
     <string name="app_name">CampusApp</string>
 
     <string name="student_name">Name</string>
-    <string name="faculty_name">Faculty</string>
+    <string name="faculty_name">Faculty name</string>
     <string name="choose_app">Choose app</string>
     <string name="cancel">cancel</string>
     <string name="gallery">gallery</string>
@@ -120,5 +120,8 @@
     <string name="open_attachment">open attachemet</string>
     <string name="docot_photo">Doctor photo</string>
     <string name="post_content">Post content</string>
+    <string name="faculty_photo">Faculty photo</string>
+    <string name="more">More</string>
+    <string name="faculty_info">Faculty info</string>
 
 </resources>
