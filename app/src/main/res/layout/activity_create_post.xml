@@ -65,7 +65,7 @@
     <com.example.boghdady.campusapp.helper.CustomEditText
         android:id="@+id/post_editText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:background="@drawable/text_shape"
@@ -87,7 +87,8 @@
         android:textSize="18sp"
         android:drawableEnd="@drawable/attach_icon"
         android:padding="5dp"
-        android:hint="@string/attachment"/>
+        android:hint="@string/attachment"
+        android:id="@+id/customTextView"/>
     <com.example.boghdady.campusapp.helper.CustomButton
         android:id="@+id/sendPost_button"
         android:layout_width="wrap_content"
@@ -98,5 +99,5 @@
         android:text="@string/send"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="16dp"/>
+        android:textSize="18sp"/>
 </LinearLayout>

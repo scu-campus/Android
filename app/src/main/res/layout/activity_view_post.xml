@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_view_post"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,44 +10,60 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.boghdady.campusapp.view_post">
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    tools:context="com.example.boghdady.campusapp.view_post"
+    android:orientation="vertical">
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
             <ImageView
-                app:srcCompat="@drawable/sallam"
-                android:id="@+id/imageView2" android:layout_width="60dp"
-                android:layout_height="60dp" android:scaleType="fitXY"/>
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/docot_photo"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/sallam"/>
             <TextView
-                android:text="Ahmed Sallam"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" android:id="@+id/textView2"
-                android:layout_weight="1" android:textSize="30sp"
-                android:gravity="center_vertical" android:textColor="@color/colorAccent"
-                android:padding="10dp"/>
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/doctor_name"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp"/>
         </LinearLayout>
         <TextView
-            android:text="@string/test_post"
-            android:layout_width="match_parent"
-            android:textColor="@color/black"
-            android:layout_height="wrap_content"
             android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
             android:layout_weight="3"
             android:background="@drawable/text_shape"
-            android:layout_marginTop="10dp"
             android:padding="5dp"
-            android:textSize="20sp" android:scrollbars="horizontal|vertical"/>
+            android:scrollbars="horizontal|vertical"
+            android:text="@string/post_content"
+            android:textColor="@color/black" android:textSize="20sp"
+        />
+        <com.example.boghdady.campusapp.helper.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/defaultColor"
+            android:drawableEnd="@drawable/download_icon"
+            android:gravity="center_vertical"
+            android:hint="@string/open_attachment"
+            android:padding="5dp"
+            android:textSize="18sp"/>
         <Button
-            android:text="@android:string/ok"
+            android:id="@+id/button2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button2"
-            android:layout_gravity="center" android:background="@drawable/button_shape"
-            android:textColor="@color/white" android:layout_marginTop="10dp"/>
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:text="@string/done"
+            android:textColor="@color/white"/>
     </LinearLayout>
-</RelativeLayout>
+

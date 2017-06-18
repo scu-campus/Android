@@ -143,19 +143,6 @@
     <string name="events">المناسبات</string>
     <string name="contact_us"> تواصل معنا</string>
     <string name="user_name">اسم المستخدم</string>
-    <string name="test_post">*IBM course will start tomorrow morning 9 am in the first stage 1.I
-        hope that everyone will attend the meeting and bring their own laptop and deal with its
-        problems today so as not to delay the follow-up tomorrow. The wifi card is specifically
-        defined.
-        * The exam at the end of the course is not the only factor in passing the course
-        and all participants must attend all days. * Who wants to apologize for attendance please
-        tell me today until it is replaced, without causing the loss of the cycle on him and his
-        colleagues and may cause himself a problem in the future.
-        * Regarding the role and names
-        accepted is found in the following link:
-        Http://sallamah.weebly.com/ibm-cloud-course-spring-2017.html this role is happy, and good
-        luck to all
-    </string>
     <string name="title_activity_search_maps">Map</string>
     <string name="Write_post">اكتب منشورك..</string>
     <string name="attachment">إضافة مرفق</string>
@@ -163,5 +150,10 @@
     <string name="year">الفرقة</string>
     <string name="section">المجموعة</string>
     <string name="send">إرسال</string>
+    <string name="doctor_name">إسم الدكتور</string>
+    <string name="open_attachment">فتح المرفق</string>
+    <string name="docot_photo">صورة الدكتور</string>
+    <string name="post_content">محتوى المنشور</string>
+
 
 </resources>
