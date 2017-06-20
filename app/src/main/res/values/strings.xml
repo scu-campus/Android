@@ -16,8 +16,8 @@
     <string name="already_user">already_user? sign in now</string>
     <string name="please_wait">Please wait...</string>
     <string name="check_your_internet">حدث خطأ ما !! برجاء التأكد من الاتصال بالانترنت .</string>
-    <string name="email">email</string>
-    <string name="password">password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
     <string name="forget_password">forget password?</string>
     <string name="login">login</string>
     <string name="doctor_login">sign up as a doctor</string>

@@ -82,7 +82,8 @@
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
             android:textSize="20sp"
-            android:drawableEnd="@drawable/next_icon"/>
+            android:drawableEnd="@drawable/next_icon"
+        android:drawableRight="@drawable/next_icon"/>
         <com.example.boghdady.campusapp.helper.CustomButton
             android:id="@+id/button"
             android:layout_width="wrap_content"

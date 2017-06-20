@@ -52,6 +52,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/defaultColor"
             android:drawableEnd="@drawable/download_icon"
+            android:drawableRight="@drawable/download_icon"
             android:gravity="center_vertical"
             android:hint="@string/open_attachment"
             android:padding="5dp"

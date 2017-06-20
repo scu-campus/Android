@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.boghdady.campusapp.login">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:contentDescription="@string/app_name"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/app_logo"/>
+    <com.example.boghdady.campusapp.helper.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_shape"
+        android:drawableEnd="@drawable/email"
+        android:drawableRight="@drawable/email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"/>
+    <com.example.boghdady.campusapp.helper.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/text_shape"
+        android:drawableEnd="@drawable/password_icon"
+        android:drawableRight="@drawable/password_icon"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="5dp"/>
+
+    <com.example.boghdady.campusapp.helper.CustomButton
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+</LinearLayout>
