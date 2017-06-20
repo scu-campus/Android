@@ -135,6 +135,7 @@
     <string name="date">التاريخ</string>
     <string name="time">التوقيت</string>
     <string name="from">من</string>
+    <string name="ok">موافق</string>
     <string name="to">الي</string>
     <string name="event_details">تفاصيل المناسبة</string>
     <string name="event_location">مكان المناسبة</string>
@@ -157,6 +158,8 @@
     <string name="faculty_photo">صورة الكلية</string>
     <string name="more">المزيد</string>
     <string name="faculty_info">معلومات الكلية</string>
+    <string name="description">التوصيف</string>
+    <string name="events_info">عرض سجل الأحداث والأنشطة</string>
 
 
 </resources>

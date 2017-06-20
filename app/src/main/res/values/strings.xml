@@ -3,7 +3,7 @@
     <string name="app_name">CampusApp</string>
 
     <string name="student_name">Name</string>
-    <string name="faculty_name">Faculty name</string>
+    <string name="faculty_name">Faculty of computers and informatics</string>
     <string name="choose_app">Choose app</string>
     <string name="cancel">cancel</string>
     <string name="gallery">gallery</string>
@@ -123,5 +123,7 @@
     <string name="faculty_photo">Faculty photo</string>
     <string name="more">More</string>
     <string name="faculty_info">Faculty info</string>
+    <string name="description">Description</string>
+    <string name="events_info"> View history of events and activities </string>
 
 </resources>

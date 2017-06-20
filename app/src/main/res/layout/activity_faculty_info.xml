@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_faculty_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/text_shape"
+    android:orientation="vertical"
+    tools:context="com.example.boghdady.campusapp.faculty_info">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:contentDescription="@string/faculty_photo"
+        android:cropToPadding="false" android:isScrollContainer="false"
+        android:longClickable="false" android:saveEnabled="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fac_fci"/>
+
+
+    <com.example.boghdady.campusapp.helper.CustomTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:background="@color/colorAccent"
+        android:maxLines="1"
+        android:text="@string/faculty_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="false"
+        android:textSize="20sp" />
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+
+        <com.example.boghdady.campusapp.helper.CustomTextView
+            android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:text="@string/description"
+                  android:textColor="@android:color/darker_gray"
+                  android:textSize="16sp"
+        />
+        <com.example.boghdady.campusapp.helper.CustomTextView
+            android:id="@+id/snippet"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:maxLines="10"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:scrollbars="vertical"
+            android:text="@string/faculty_info"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+
+        <com.example.boghdady.campusapp.helper.CustomTextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/defaultColor"/>
+
+        <com.example.boghdady.campusapp.helper.CustomTextView
+
+            android:text="@string/events_info"
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:drawableEnd="@drawable/next_icon"/>
+        <com.example.boghdady.campusapp.helper.CustomButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/ok"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</LinearLayout>

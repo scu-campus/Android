@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/fac_fci"/>
 
 
-    <TextView
+    <com.example.boghdady.campusapp.helper.CustomTextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="20dp"
@@ -27,14 +27,16 @@
         android:ellipsize="none"
         android:freezesText="false"
         android:maxLines="1" android:minLines="1"
-        android:text="@string/faculty_name" android:textAlignment="center" android:textColor="@color/white"
-        android:textIsSelectable="false" android:textSize="14sp"/>
+        android:text="@string/faculty_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
 
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:background="@color/white"
                   android:orientation="vertical">
-        <TextView
+        <com.example.boghdady.campusapp.helper.CustomTextView
             android:id="@+id/snippet"
             android:layout_width="match_parent"
             android:layout_height="150dp"
@@ -42,7 +44,7 @@
             android:maxLines="10"
             android:padding="5dp" android:text="@string/faculty_info" android:textAllCaps="false"
             android:textColor="@android:color/black" android:textSize="12sp"/>
-        <Button
+        <com.example.boghdady.campusapp.helper.CustomButton
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="25dp"
