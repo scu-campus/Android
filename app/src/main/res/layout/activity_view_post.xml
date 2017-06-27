@@ -57,14 +57,6 @@
             android:hint="@string/open_attachment"
             android:padding="5dp"
             android:textSize="18sp"/>
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_shape"
-            android:text="@string/done"
-            android:textColor="@color/white"/>
+
     </LinearLayout>
 

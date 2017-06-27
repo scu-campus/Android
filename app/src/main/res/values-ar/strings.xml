@@ -2,7 +2,7 @@
     <string name="app_name">CampusApp</string>
 
     <string name="student_name">الاسم</string>
-    <string name="faculty_name">إسم الكلية</string>
+    <string name="faculty_name"> الكلية</string>
     <string name="choose_app">اختر التطبيق</string>
     <string name="cancel">الغاء</string>
     <string name="gallery">معرض الصور</string>
@@ -146,12 +146,12 @@
     <string name="user_name">اسم المستخدم</string>
     <string name="title_activity_search_maps">Map</string>
     <string name="Write_post">اكتب منشورك..</string>
-    <string name="attachment">إضافة مرفق</string>
+    <string name="attachment">لم يتم إضافة اى مرفق</string>
     <string name="post_to">إرسال المنشور إلى:</string>
     <string name="year">الفرقة</string>
     <string name="section">المجموعة</string>
     <string name="send">إرسال</string>
-    <string name="doctor_name">إسم الدكتور</string>
+    <string name="doctor_name">احمد سلام</string>
     <string name="open_attachment">فتح المرفق</string>
     <string name="docot_photo">صورة الدكتور</string>
     <string name="post_content">محتوى المنشور</string>

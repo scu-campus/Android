@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_create_post"
@@ -11,94 +11,139 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.boghdady.campusapp.Create_post">
-    <com.example.boghdady.campusapp.helper.CustomTextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/post_to"
-        android:textColor="@color/colorAccent"
-        android:textSize="26sp"
-    />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/text_shape"
-        android:orientation="horizontal"
-        android:padding="5dp">
+        android:orientation="vertical">
         <com.example.boghdady.campusapp.helper.CustomTextView
-            android:id="@+id/year_textView"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:text="@string/year"
-            android:textColor="@color/black"
-            android:textSize="18sp"/>
-        <Spinner
-            android:id="@+id/year_spinner"
+            android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:gravity="center_vertical"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/text_shape"
-        android:orientation="horizontal"
-        android:padding="5dp">
-        <com.example.boghdady.campusapp.helper.CustomTextView
-            android:id="@+id/section_textView"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:text="@string/section"
-            android:textColor="@color/black"
-            android:textSize="18sp"/>
-        <Spinner
-            android:id="@+id/section_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:text="@string/post_to"
+            android:textColor="@color/colorAccent"
+            android:textSize="26sp"
         />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <com.example.boghdady.campusapp.helper.CustomTextView
+                android:id="@+id/faculty_textView"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/faculty_name"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <Spinner
+                android:id="@+id/faculty_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <com.example.boghdady.campusapp.helper.CustomTextView
+                android:id="@+id/year_textView"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/year"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <Spinner
+                android:id="@+id/year_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <com.example.boghdady.campusapp.helper.CustomTextView
+                android:id="@+id/section_textView"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/section"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <Spinner
+                android:id="@+id/section_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_shape"
+            android:orientation="vertical"
+        >
+
+            <com.example.boghdady.campusapp.helper.CustomEditText
+                android:id="@+id/post_editText"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="@string/Write_post"
+                android:padding="5dp"
+                android:scrollbars="horizontal|vertical"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <com.example.boghdady.campusapp.helper.CustomTextView
+                    android:id="@+id/customTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/attachment"
+                    android:textSize="18sp"/>
+                <com.example.boghdady.campusapp.helper.CustomButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/upload_image_icon"/>
+                <com.example.boghdady.campusapp.helper.CustomButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/attach_icon"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.example.boghdady.campusapp.helper.CustomButton
+            android:id="@+id/sendPost_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:text="@string/send"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
     </LinearLayout>
-    <com.example.boghdady.campusapp.helper.CustomEditText
-        android:id="@+id/post_editText"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:background="@drawable/text_shape"
-        android:ems="10"
-        android:gravity="start"
-        android:hint="@string/Write_post"
-        android:padding="5dp"
-        android:scrollHorizontally="true"
-        android:scrollbarStyle="outsideOverlay" android:scrollbars="horizontal|vertical"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-    />
-    <com.example.boghdady.campusapp.helper.CustomTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/text_shape"
-        android:gravity="center_vertical"
-        android:textSize="18sp"
-        android:drawableEnd="@drawable/attach_icon"
-        android:drawableRight="@drawable/attach_icon"
-        android:padding="5dp"
-        android:hint="@string/attachment"
-        android:id="@+id/customTextView"/>
-    <com.example.boghdady.campusapp.helper.CustomButton
-        android:id="@+id/sendPost_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button_shape"
-        android:text="@string/send"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="18sp"/>
-</LinearLayout>
+
+
+</ScrollView>

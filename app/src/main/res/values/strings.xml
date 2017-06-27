@@ -110,14 +110,16 @@
     <string name="from">From</string>
     <string name="to">To</string>
     <string name="Write_post">Write your post..</string>
-    <string name="attachment">Add attachment</string>
+    <string name="attachment">No attachment uploaded
+
+  </string>
     <string name="post_to">Send post to:</string>
     <string name="year">Year</string>
     <string name="section">Section</string>
     <string name="send">Send</string>
     <string name="ok">Ok</string>
-    <string name="doctor_name">Doctor name</string>
-    <string name="open_attachment">open attachemet</string>
+    <string name="doctor_name">Ahmed sallam</string>
+    <string name="open_attachment">assignment 1.pdf</string>
     <string name="docot_photo">Doctor photo</string>
     <string name="post_content">Post content</string>
     <string name="faculty_photo">Faculty photo</string>
