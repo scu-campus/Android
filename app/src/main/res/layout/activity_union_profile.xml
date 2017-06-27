@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_union_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.boghdady.campusapp.Union_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/sallam"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:paddingTop="30dp">
+                <com.example.boghdady.campusapp.helper.CustomButton
+                    android:id="@+id/follow_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/defaultColor"
+                    android:text="@string/follow"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+                <com.example.boghdady.campusapp.helper.CustomTextView
+                    android:id="@+id/followers_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/followers_counter"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.example.boghdady.campusapp.helper.CustomTextView
+            android:id="@+id/union_name"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/colorAccent"
+                  android:gravity="center"
+                  android:text="@string/unioi_name"
+                  android:textColor="@color/white"
+                  android:textSize="30sp"/>
+
+        <com.example.boghdady.campusapp.helper.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/description"/>
+        <com.example.boghdady.campusapp.helper.CustomTextView
+            android:id="@+id/description_text"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingBottom="5dp"
+            android:scrollbars="vertical"
+            android:text="@string/description_text"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+            <ImageView
+                android:id="@+id/email_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/email"
+                android:src="@drawable/email"/>
+
+            <com.example.boghdady.campusapp.helper.CustomTextView
+                android:id="@id/textView1"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_toEndOf="@+id/email_image"
+                      android:layout_toRightOf="@+id/email_image"
+                      android:paddingLeft="15dp"
+                      android:paddingRight="15dp"
+                      android:paddingStart="15dp"
+                      android:text="@string/email"/>
+
+            <com.example.boghdady.campusapp.helper.CustomTextView
+                android:id="@+id/email_text"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/textView1"
+                      android:layout_toEndOf="@+id/email_image"
+                      android:layout_toRightOf="@+id/email_image"
+                      android:paddingLeft="15dp"
+                      android:paddingRight="15dp"
+                      android:paddingStart="15dp"
+                      android:text="@string/email_text"
+                      android:textColor="@color/black"
+                      android:textSize="20sp"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="end"
+            android:background="@color/gray"/>
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+            <ImageView
+                android:id="@+id/phone_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/phone_number"
+                android:src="@drawable/phone"/>
+
+            <com.example.boghdady.campusapp.helper.CustomTextView
+                android:id="@id/textView2"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_toEndOf="@+id/phone_image"
+                      android:layout_toRightOf="@+id/phone_image"
+                      android:paddingLeft="15dp"
+                      android:paddingRight="15dp"
+                      android:paddingStart="15dp"
+                      android:text="@string/phone_number"/>
+
+            <com.example.boghdady.campusapp.helper.CustomTextView
+                android:id="@+id/phone_text"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/textView2"
+                      android:layout_toEndOf="@+id/phone_image"
+                      android:layout_toRightOf="@+id/phone_image"
+                      android:paddingLeft="15dp"
+                      android:paddingRight="15dp"
+                      android:paddingStart="15dp"
+                      android:text="@string/phone_text"
+                      android:textColor="@color/black"
+                      android:textSize="20sp"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="end"
+            android:background="@color/gray"/>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+            <ImageView
+                android:id="@+id/location_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/location"
+                android:src="@drawable/ic_map_marker"/>
+
+            <com.example.boghdady.campusapp.helper.CustomTextView
+                android:id="@id/textView3"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_toEndOf="@+id/location_image"
+                      android:layout_toRightOf="@+id/location_image"
+                      android:paddingLeft="15dp"
+                      android:paddingRight="15dp"
+                      android:paddingStart="15dp"
+                      android:text="@string/location"/>
+
+            <com.example.boghdady.campusapp.helper.CustomTextView
+                android:id="@+id/location_text"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/textView3"
+                      android:layout_toEndOf="@+id/location_image"
+                      android:layout_toRightOf="@+id/location_image"
+                      android:paddingLeft="15dp"
+                      android:paddingRight="15dp"
+                      android:paddingStart="15dp"
+                      android:text="@string/location_text"
+                      android:textColor="@color/black"
+                      android:textSize="20sp"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="end"
+            android:background="@color/gray"/>
+        <com.example.boghdady.campusapp.helper.CustomTextView
+
+            android:text="@string/events_info"
+            android:id="@+id/events_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:drawableEnd="@drawable/next_icon"
+            android:drawableRight="@drawable/next_icon"/>
+    </LinearLayout>
+</ScrollView>

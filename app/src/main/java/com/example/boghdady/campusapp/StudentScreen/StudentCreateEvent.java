@@ -36,7 +36,7 @@ public class StudentCreateEvent extends AppCompatActivity implements DatePickerD
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.student_creat_event);
+        setContentView(R.layout.activity_create_event);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Create Event");

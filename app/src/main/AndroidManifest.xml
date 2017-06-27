@@ -64,6 +64,10 @@
         </activity>
         <activity android:name=".faculty_info">
         </activity>
+        <activity android:name=".login">
+        </activity>
+        <activity android:name=".Union_profile">
+        </activity>
     </application>
 
 </manifest>

@@ -124,6 +124,27 @@
     <string name="more">More</string>
     <string name="faculty_info">Faculty info</string>
     <string name="description">Description</string>
-    <string name="events_info"> View history of events and activities </string>
+    <string name="events_info">View history of events and activities</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="past">Past</string>
+    <string name="Notification_sender">Ahmed Sallam</string>
+    <string name="notification_descrip">Assignment 1 is available now Assignment 1 is available now
+        Assignment 1 is available now ...
+    </string>
+    <string name="notification_time">5:45</string>
+    <string name="sender_photo">Sender photo</string>
+    <string name="unioi_name">FCI Union</string>
+    <string name="follow">Follow</string>
+    <string name="followers_counter">20 Followers</string>
+    <string name="email_text">www.fci.union.com</string>
+    <string name="phone_text">012578256521</string>
+    <string name="location">Location</string>
+    <string name="location_text">Faculty of computers &amp; informatics</string>
+    <string name="description_text">the details and goals
+        ...............................................................
+        ...............................................................
+        ...............................................................
+        ...............................................................
+        here </string>
 
 </resources>

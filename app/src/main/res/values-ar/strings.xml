@@ -160,6 +160,27 @@
     <string name="faculty_info">معلومات الكلية</string>
     <string name="description">التوصيف</string>
     <string name="events_info">عرض سجل الأحداث والأنشطة</string>
+    <string name="upcoming">لاحقا</string>
+    <string name="past">سابقا</string>
+    <string name="Notification_sender">Ahmed Sallam</string>
+    <string name="notification_descrip">Assignment 1 is available now Assignment 1 is available now Assignment 1 is available now ...
+    </string>
+    <string name="notification_time">5:45</string>
+    <string name="sender_photo">Sender photo</string>
+    <string name="unioi_name">اتحاد طلاب جامعة قناة السويس</string>
+    <string name="follow">متابعة</string>
+    <string name="followers_counter">۲۰ متابعة</string>
+    <string name="email_text">www.fci.union.com</string>
+    <string name="phone_text">012578256521</string>
+    <string name="location">الموقع</string>
+    <string name="location_text">كلية الحاسبات والمعلومات</string>
+    <string name="description_text">التفاصيل والاهداف
+    ....................................................................
+        ...................................................................
+        ................................................................
+        ..............................................................
+        هنا
+    </string>
 
 
 </resources>
